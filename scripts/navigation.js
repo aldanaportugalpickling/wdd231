@@ -101,8 +101,8 @@ function renderCourses(filter) {
   let filtered = courses;
 
   if (filter !== "all") {
-    filtered = courses.filter(c => c.subject === filter);
-  }
+    filtered = courses.filter(c => c.subject.toLowerCase() === filter);
+    }
 
   let credits = 0;
   filtered.forEach(course => {
