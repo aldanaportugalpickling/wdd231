@@ -111,6 +111,34 @@ aside img {
     height: auto;
     padding: .8rem;
 }
+.filter-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.filter-buttons button {
+    background: #ddd;
+    border: none;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    font-weight: bold;
+}
+
+.filter-buttons button.active {
+    background: #333;
+    color: #fff;
+}
+
+.course-card {
+    background: #e0e0e0;
+    margin: .5rem 0;
+    padding: .75rem;
+    border-radius: .3rem;
+}
+
 
 
 /*FOOTER*/

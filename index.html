@@ -61,13 +61,18 @@
 
         <section class="courses">
             <h2>Web Certificate Course</h2>
-            <nav>
-                <ul>
-                    <li><a href="">All courses</a></li>
-                    <li><a href="">WDD Courses</a></li>
-                    <li><a href="">CSE Courses</a></li>
-                </ul>
-            </nav>
+            <div class="filter-buttons">
+                <button data-filter="all" class="active">All</button>
+                <button data-filter="cse">CSE</button>
+                <button data-filter="wdd">WDD</button>
+            </div>
+            
+            <div id="course-list">
+                <!-- Aquí JS insertará las tarjetas de cursos -->
+            </div>
+            
+            <p id="total-credits">The total credits for course listed above is 0</p>
+            </section>
         </section>
     </main>
 
