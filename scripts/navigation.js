@@ -12,6 +12,7 @@ document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`; 
 
 
+
 const courses = [
     {
         subject: 'CSE',
@@ -23,7 +24,7 @@ const courses = [
         technology: [
             'Python'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -36,7 +37,7 @@ const courses = [
             'HTML',
             'CSS'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'CSE',
@@ -60,7 +61,7 @@ const courses = [
         technology: [
             'C#'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -74,7 +75,7 @@ const courses = [
             'CSS',
             'JavaScript'
         ],
-        completed: false
+        completed: true
     },
     {
         subject: 'WDD',
@@ -104,14 +105,21 @@ function renderCourses(filter) {
     filtered = courses.filter(c => c.subject.toLowerCase() === filter);
     }
 
-  let credits = 0;
-  filtered.forEach(course => {
-    const div = document.createElement("div");
+let credits = filtered.reduce((sum, course) => sum + course.credits, 0);
+
+ filtered.forEach(course => {
+  const div = document.createElement("div");
+  div.classList.add("course-card");
+
+  if (course.completed) {
+    div.classList.add("completed");
+    div.textContent = `✓${course.subject} ${course.number}`;
+  } else {
     div.textContent = `${course.subject} ${course.number}`;
-    div.classList.add("course-card");
-    list.appendChild(div);
-    credits += course.credits;
-  });
+  }
+
+  list.appendChild(div);
+});
 
   totalCredits.textContent =
     `The total credits for course listed above is ${credits}`;
@@ -125,5 +133,5 @@ buttons.forEach(btn => {
   });
 });
 
-// Mostrar todos al cargar
+
 renderCourses("all");

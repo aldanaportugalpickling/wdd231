@@ -24,13 +24,17 @@
     }
 
     main {
-        padding-top: 5rem;
         display: grid;
         grid-template-areas:
+            "tittle title"
             "about photo"
             "courses courses";
         grid-template-columns: 2fr 1fr;
         gap: 20px;
+    }
+
+    .home-title {
+        font-size: 2rem;
     }
     
     .about {
@@ -44,4 +48,5 @@
     .courses {
         grid-area: courses;
     }
+
 }   
