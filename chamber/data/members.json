@@ -1,0 +1,58 @@
+[
+  {
+    "name": "Amazon Eco Tours",
+    "address": "Malecón Tarapacá 123, Iquitos",
+    "phone": "+51 987 654 321",
+    "website": "https://amazonecotours.pe",
+    "image": "images/lodge.webp",
+    "membership": "Gold"
+  },
+  {
+    "name": "SelvaTech Solutions",
+    "address": "Av. Grau 456, Iquitos",
+    "phone": "+51 912 345 678",
+    "website": "https://amazonecotours.pe",
+    "image": "images/selvatech.webp",
+    "membership": "Silver"
+  },
+  {
+    "name": "Iquitos River Transport",
+    "address": "Puerto Masusa, Iquitos",
+    "phone": "+51 999 888 777",
+    "website": "https://iquitosriver.pe",
+    "image": "images/river-transport.webp",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Casa Amazónica Hotel & Spa",
+    "address": "Calle Nauta 321, Iquitos",
+    "phone": "+51 984 321 654",
+    "website": "https://casaamazonica.pe",
+    "image": "images/hotel.webp",
+    "membership": "Gold"
+  },
+  {
+    "name": "Artesanos del Río",
+    "address": "Jr. Prospero 789, Iquitos",
+    "phone": "+51 981 234 567",
+    "website": "https://artesanosdelrio.pe",
+    "image": "images/artesanos.webp",
+    "membership": "Silver"
+  },
+  {
+    "name": "Amazon Legal Advisors",
+    "address": "Av. Mariscal Cáceres 101, Iquitos",
+    "phone": "+51 980 112 233",
+    "website": "https://amazonlegal.pe",
+    "image": "images/amazon-legal.webp",
+    "membership": "Bronze"
+  },
+  {
+    "name": "Perú Verde Marketing",
+    "address": "Calle Putumayo 456, Iquitos",
+    "phone": "+51 987 000 111",
+    "website": "https://peruverdemkt.pe",
+    "image": "images/marketing.webp",
+    "membership": "Silver"
+  }
+]
