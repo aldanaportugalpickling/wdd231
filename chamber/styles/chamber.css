@@ -74,7 +74,7 @@ header span {
 }
 
 .navigation li.current {
-    background-color: #006919;
+    background-color: rgb(101, 101, 101);
 }
 
 .navigation a:hover {
@@ -83,7 +83,7 @@ header span {
 
 /***MAIN***/
 .title-area {
-    padding: 10px 10px;
+    margin-left: 10px;
 }
 
 .title-area h1 {
@@ -93,18 +93,20 @@ header span {
 
 .menu {
     display: block;
+    text-align: center;
     background-color: #00695C;
-    padding: 0.5rem;
+    padding: 0.7rem;
 }
 
 .menu button {
     padding: 0.6rem 1.4rem;
     border: 2px solid #555;
     color: #333;
-    font-family: Poppins, sans-serif;
+    font-family: "Poppins", sans-serif;
     font-weight: 500;
     border-radius: 8px;
     cursor: pointer;
+    margin-inline-start: 20px;
 }
 
 .menu button:hover {
@@ -116,8 +118,93 @@ header span {
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
-    margin-bottom: 1.5rem;
 }
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+    font-family: 'Lora', serif;
+    justify-items: center;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.card h3 {
+    color: #00695C;
+    font-size: 1.2rem;
+    margin-bottom: 0.3rem;
+}
+
+.card p {
+    margin: 0.2rem 0;
+    color: #333;
+}
+
+.card a {
+    display: block;
+    margin-top: 0.5rem;
+    color: #cbb326ff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.card a:hover {
+    text-decoration: underline;
+}
+
+
+#cards.list .card {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+    align-items: flex-start;
+    border: 1px solid #ddd;
+    border-radius: 12px;
+    background-color: #fff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cards.list .card img {
+    display: none;
+}
+
+
+
+#cards.list .card h3,
+#cards.list .card p,
+#cards.list .card a {
+    font-size: 1rem;
+    font-family: 'Lora', serif;
+    color: #333;
+    margin: 0;
+    line-height: 1.4;
+    word-break: break-word;
+}
+
+#cards.list .card a {
+    color: #cbb326ff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#cards.list .card a:hover {
+    text-decoration: underline;
+}
+
 
 /**FOOTER**/
 footer {

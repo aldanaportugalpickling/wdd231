@@ -10,7 +10,7 @@ navButton.addEventListener('click', () => {
 
 const gridButton = document.getElementById("grid");
 const listButton = document.getElementById("list");
-const display = document.getElementById("members");
+const display = document.getElementById("cards");
 
 gridButton.addEventListener("click", () => {
   display.classList.add("grid");
@@ -71,6 +71,7 @@ function displayMembers(members) {
     const membership = document.createElement('p');
     membership.textContent = `Membership: ${member.membership}`;
 
+  
       
     // Agregar todo al card
     card.appendChild(img);
