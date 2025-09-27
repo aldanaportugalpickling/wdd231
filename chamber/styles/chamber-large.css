@@ -73,7 +73,7 @@
         display: none;
     }
 
-    #cards.list .card h2,
+    #cards.list .card h3,
     #cards.list .card p,
     #cards.list .card a {
         margin: 0;

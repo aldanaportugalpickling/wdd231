@@ -43,7 +43,7 @@ function renderMembers(data) {
     img.setAttribute('height', '200');
 
 
-    const name = document.createElement('h2');
+    const name = document.createElement('h3');
     name.textContent = m.name;
 
     const address = document.createElement('p');

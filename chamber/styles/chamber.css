@@ -181,7 +181,7 @@ header span {
     display: none;
 }
 
-#cards.list .card h2,
+#cards.list .card h3,
 #cards.list .card p {
     font-size: 1rem;
     font-family: 'Lora', serif;
