@@ -42,9 +42,6 @@ function renderMembers(data) {
     img.setAttribute('width', '200');
     img.setAttribute('height', '200');
 
-    //pruebaaa
-    const name = document.createElement(m.name === "Amazon Eco Tours" ? 'h2' : 'h3');
-
     const name = document.createElement('h3');
     name.textContent = m.name;
 
