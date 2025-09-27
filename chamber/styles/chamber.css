@@ -165,12 +165,12 @@ header span {
     text-decoration: underline;
 }
 
- #cards {
-     display: grid;
-     grid-template-columns: 1fr 1fr 1fr;
-     gap: 1rem;
-     padding: 1rem;
- }
+#cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    padding: 1rem;
+}
 
 #cards.list .card {
     display: flex;
