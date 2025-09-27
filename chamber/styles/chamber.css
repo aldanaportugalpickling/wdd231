@@ -113,14 +113,6 @@ header span {
     background: #cbb326ff;
 }
 
-#cards.grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    padding: 1rem;
-}
-
-
 .card {
     background-color: #fff;
     border: 1px solid #ddd;
@@ -165,9 +157,9 @@ header span {
     text-decoration: underline;
 }
 
-#cards {
+#cards.grid {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
 }
@@ -188,8 +180,6 @@ header span {
     display: none;
 }
 
-
-
 #cards.list .card h3,
 #cards.list .card p,
 #cards.list .card a {
@@ -205,6 +195,7 @@ header span {
     color: #cbb326ff;
     font-weight: bold;
     text-decoration: none;
+
 }
 
 #cards.list .card a:hover {

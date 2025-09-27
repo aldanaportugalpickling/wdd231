@@ -94,4 +94,12 @@
     #cards.list .card a:hover {
         text-decoration: underline;
     }
+
+    .card:nth-child(5) {
+        order: 999;
+    }
+
+    .card:nth-child(5) {
+        grid-column: 2;
+    }
 }
