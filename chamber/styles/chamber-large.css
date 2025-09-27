@@ -1,9 +1,13 @@
 @media only screen and (min-width: 38rem) {
-    
-    header, main, nav, footer {
+
+    header,
+    main,
+    nav,
+    footer {
         max-width: 900px;
         margin: auto;
     }
+
     header {
         grid-template-columns: 24px auto;
     }
@@ -11,12 +15,13 @@
     .hamburger {
         display: none;
     }
-    
+
     .navigation {
         display: block;
 
         border-bottom: solid 1px #eee;
     }
+
     .navigation ul {
         display: flex;
     }
@@ -32,6 +37,7 @@
         padding: 1rem;
         flex-wrap: wrap;
     }
+
     h3 {
         text-align: center;
     }
@@ -39,10 +45,10 @@
     p {
         text-align: center;
     }
-    
-        #cards.grid {
-            grid-template-columns: 1fr 1fr 1fr;
-        }
+
+    #cards.grid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 
     #cards.list {
         display: flex;
@@ -50,7 +56,7 @@
         gap: 1rem;
         padding: 1rem;
     }
-    
+
     #cards.list .card {
         display: grid;
         grid-template-columns: 2fr 3fr 2fr 3fr;
@@ -62,30 +68,30 @@
         background-color: #fff;
         box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     }
-    
-        #cards.list .card img {
-            display: none;
-        }
-    
-        #cards.list .card h3,
-        #cards.list .card p,
-        #cards.list .card a {
-            margin: 0;
-            font-size: 0.95rem;
-            font-family: 'Lora', serif;
-            color: #333;
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
-        }
-    
-        #cards.list .card a {
-            color: #cbb326ff;
-            font-weight: bold;
-            text-decoration: none;
-        }
-    
-        #cards.list .card a:hover {
-            text-decoration: underline;
-        }
+
+    #cards.list .card img {
+        display: none;
+    }
+
+    #cards.list .card h3,
+    #cards.list .card p,
+    #cards.list .card a {
+        margin: 0;
+        font-size: 0.95rem;
+        font-family: 'Lora', serif;
+        color: #333;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    #cards.list .card a {
+        color: #cbb326ff;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    #cards.list .card a:hover {
+        text-decoration: underline;
+    }
 }

@@ -3,9 +3,9 @@ const navBar = document.querySelector('#nav-bar');
 
 
 navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navBar.classList.toggle('show'); 
-    
+  navButton.classList.toggle('show');
+  navBar.classList.toggle('show');
+
 });
 
 const gridButton = document.getElementById("grid");
@@ -25,12 +25,12 @@ listButton.addEventListener("click", () => {
 
 //Get the current year and the Last modified
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
-document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`; 
+document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
 async function getMembers() {
-    const response = await fetch('data/members.json');
-    const members = await response.json();
-    displayMembers(members);
+  const response = await fetch('data/members.json');
+  const members = await response.json();
+  displayMembers(members);
 }
 getMembers();
 
@@ -71,8 +71,8 @@ function displayMembers(members) {
     const membership = document.createElement('p');
     membership.textContent = `Membership: ${member.membership}`;
 
-  
-      
+
+
     // Agregar todo al card
     card.appendChild(img);
     card.appendChild(name);
