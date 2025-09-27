@@ -103,23 +103,3 @@
         grid-column: 2;
     }
 }
-
-/* Tablet: 600px a 899px */ @media (min-width: 600px) and (max-width: 899px) {
-    #cards.grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .card {
-        padding: 1.2rem;
-        font-size: 1.05rem;
-    }
-
-    .card h3 {
-        font-size: 1.3rem;
-    }
-
-    .menu button {
-        font-size: 1rem;
-        padding: 0.8rem 1.6rem;
-    }
-}
