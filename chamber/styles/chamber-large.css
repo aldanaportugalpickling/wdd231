@@ -25,7 +25,7 @@
         border: none;
     }
 
-    #cards {
+    #cards.grid {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         gap: 1rem;
@@ -40,7 +40,10 @@
         text-align: center;
     }
     
-       
+        #cards.grid {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+
     #cards.list {
         display: flex;
         flex-direction: column;

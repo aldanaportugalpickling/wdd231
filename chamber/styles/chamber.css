@@ -113,7 +113,7 @@ header span {
     background: #cbb326ff;
 }
 
-#cards.directory-grid {
+#cards.grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
@@ -138,7 +138,7 @@ header span {
 
 .card img {
     width: 100%;
-    height: auto;
+    height: 200px;
     border-radius: 8px;
 }
 
@@ -165,6 +165,12 @@ header span {
     text-decoration: underline;
 }
 
+ #cards {
+     display: grid;
+     grid-template-columns: 1fr 1fr 1fr;
+     gap: 1rem;
+     padding: 1rem;
+ }
 
 #cards.list .card {
     display: flex;
