@@ -42,7 +42,7 @@ function renderMembers(data) {
     img.width = 200;
     img.height = 200;
 
-    const name = document.createElement('h3');
+    const name = document.createElement('h2');
     name.textContent = m.name;
 
     const address = document.createElement('p');
