@@ -39,8 +39,9 @@ function renderMembers(data) {
     img.src = m.image;
     img.alt = `Logo of ${m.name}`;
     img.loading = 'lazy';
-    img.width = 200;
-    img.height = 200;
+    img.setAttribute('width', '200');
+    img.setAttribute('height', '200');
+
 
     const name = document.createElement('h2');
     name.textContent = m.name;
