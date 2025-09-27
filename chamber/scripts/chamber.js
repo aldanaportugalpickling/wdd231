@@ -1,89 +1,65 @@
-const navButton = document.querySelector('#nav-button');
-const navBar = document.querySelector('#nav-bar');
+const navBtn = document.querySelector('#nav-button'),
+      navBar = document.querySelector('#nav-bar'),
+      gridBtn = document.getElementById("grid"),
+      listBtn = document.getElementById("list"),
+      cards = document.getElementById("cards");
 
-
-navButton.addEventListener('click', () => {
-  navButton.classList.toggle('show');
+navBtn.addEventListener('click', () => {
+  navBtn.classList.toggle('show');
   navBar.classList.toggle('show');
-
 });
 
-const gridButton = document.getElementById("grid");
-const listButton = document.getElementById("list");
-const display = document.getElementById("cards");
-
-gridButton.addEventListener("click", () => {
-  display.classList.add("grid");
-  display.classList.remove("list");
+gridBtn.addEventListener("click", () => {
+  cards.classList.add("grid");
+  cards.classList.remove("list");
 });
 
-listButton.addEventListener("click", () => {
-  display.classList.add("list");
-  display.classList.remove("grid");
+listBtn.addEventListener("click", () => {
+  cards.classList.add("list");
+  cards.classList.remove("grid");
 });
 
-
-//Get the current year and the Last modified
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
 async function getMembers() {
-  const response = await fetch('data/members.json');
-  const members = await response.json();
-  displayMembers(members);
+  const res = await fetch('data/members.json');
+  const data = await res.json();
+  renderMembers(data);
 }
 getMembers();
 
+function renderMembers(data) {
+  cards.innerHTML = '';
+  data.forEach(m => {
+    const c = document.createElement('section');
+    c.classList.add('card');
 
-function displayMembers(members) {
-  const cards = document.querySelector('#cards');
-  cards.innerHTML = ''; // limpiar antes de insertar
-
-  members.forEach(member => {
-    const card = document.createElement('section');
-    card.classList.add('card');
-
-    // Imagen de la empresa
     const img = document.createElement('img');
-    img.src = member.image;
-    img.alt = `Logo of ${member.name}`;
+    img.src = m.image;
+    img.alt = `Logo of ${m.name}`;
     img.loading = 'lazy';
-    img.width = 200;      // ajusta según tu diseño
+    img.width = 200;
     img.height = 200;
 
-
-    // Nombre
     const name = document.createElement('h3');
-    name.textContent = member.name;
+    name.textContent = m.name;
 
-    // Dirección
     const address = document.createElement('p');
-    address.textContent = member.address;
+    address.textContent = m.address;
 
-    // Teléfono
     const phone = document.createElement('p');
-    phone.textContent = member.phone;
+    phone.textContent = m.phone;
 
-    // Enlace a sitio web
     const link = document.createElement('a');
-    link.href = member.website;
+    link.href = m.website;
     link.target = '_blank';
     link.textContent = 'Visit Website';
 
-    // Nivel de membresía
-    const membership = document.createElement('p');
-    membership.textContent = `Membership: ${member.membership}`;
+    const level = document.createElement('p');
+    level.textContent = `Membership: ${m.membership}`;
 
-
-
-    // Agregar todo al card
-    card.appendChild(img);
-    card.appendChild(name);
-    card.appendChild(address);
-    card.appendChild(phone);
-    card.appendChild(link);
-    card.appendChild(membership);
-
-    cards.appendChild(card);
+    [img, name, address, phone, link, level].forEach(el => c.appendChild(el));
+    cards.appendChild(c);
   });
 }
