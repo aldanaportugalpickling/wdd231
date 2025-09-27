@@ -84,6 +84,7 @@ header span {
 /***MAIN***/
 .title-area {
     margin-left: 10px;
+    font-size: 15px;
 }
 
 .title-area h1 {
@@ -100,8 +101,8 @@ header span {
 
 .menu button {
     padding: 0.6rem 1.4rem;
-    border: 2px solid #555;
-    color: #333;
+    border: 2px solid #ccc;
+    color: #000;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     border-radius: 8px;
