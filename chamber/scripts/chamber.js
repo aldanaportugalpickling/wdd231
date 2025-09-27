@@ -48,6 +48,9 @@ function displayMembers(members) {
     img.src = member.image;
     img.alt = `Logo of ${member.name}`;
     img.loading = 'lazy';
+    img.width = 200;      // ajusta según tu diseño
+    img.height = 200;
+
 
     // Nombre
     const name = document.createElement('h3');

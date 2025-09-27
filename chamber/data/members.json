@@ -5,7 +5,7 @@
     "phone": "+51 987 654 321",
     "website": "https://amazonecotours.pe",
     "image": "images/lodge.webp",
-    "membership": "Gold"
+    "membership": "3"
   },
   {
     "name": "SelvaTech Solutions",
@@ -13,7 +13,7 @@
     "phone": "+51 912 345 678",
     "website": "https://amazonecotours.pe",
     "image": "images/selvatech.webp",
-    "membership": "Silver"
+    "membership": "2"
   },
   {
     "name": "Iquitos River Transport",
@@ -21,7 +21,7 @@
     "phone": "+51 999 888 777",
     "website": "https://iquitosriver.pe",
     "image": "images/river-transport.webp",
-    "membership": "Bronze"
+    "membership": "1"
   },
   {
     "name": "Amazonian Hotel & Spa",
@@ -29,7 +29,7 @@
     "phone": "+51 984 321 654",
     "website": "https://casaamazonica.pe",
     "image": "images/hotel.jpg",
-    "membership": "Gold"
+    "membership": "3"
   },
   {
     "name": "River Artisans",
@@ -37,7 +37,7 @@
     "phone": "+51 981 234 567",
     "website": "https://artesanosdelrio.pe",
     "image": "images/artesanos.webp",
-    "membership": "Silver"
+    "membership": "2"
   },
   {
     "name": "Amazon Legal Advisors",
@@ -45,7 +45,7 @@
     "phone": "+51 980 112 233",
     "website": "https://amazonlegal.pe",
     "image": "images/amazon-legal.webp",
-    "membership": "Bronze"
+    "membership": "1"
   },
   {
     "name": "Peru Green Marketing",
@@ -53,6 +53,6 @@
     "phone": "+51 987 000 111",
     "website": "https://peruverdemkt.pe",
     "image": "images/marketing.webp",
-    "membership": "Silver"
+    "membership": "2"
   }
 ]
