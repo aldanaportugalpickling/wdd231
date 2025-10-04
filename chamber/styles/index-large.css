@@ -1,5 +1,6 @@
 @media only screen and (min-width: 38rem) {
-header,
+
+    header,
     main,
     nav,
     footer {
@@ -34,20 +35,19 @@ header,
         gap: 1rem;
         margin-bottom: 2rem;
     }
-    
+
     .event-card,
     .weather-card,
     .forecast-card {
         width: 100%;
     }
-    
 
-    #spotlight-container  {
-        display: grid;
+    #spotlight-container {
+
         gap: 1rem;
         grid-template-columns: repeat(3, 1fr);
-        
-        
+
+
     }
-    
+
 }
