@@ -27,7 +27,12 @@
     <script src="scripts/weather.js" defer></script>
     <script src="scripts/spotlight.js" defer></script>
 
-
+    <style>
+        .visually-hidden {
+            position: absolute;
+            left: -9999px;
+        }
+    </style>
 </head>
 
 <body>
@@ -39,8 +44,8 @@
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="home.html">Home</a></li>
-            <li><a href="directory.html">Directory</a></li>
+            <li class="current"><a href="">Home</a></li>
+            <li><a href="">Directory</a></li>
             <li><a href="#">Discover</a></li>
             <li><a href="#">Join</a></li>
         </ul>
@@ -48,6 +53,7 @@
 
     <main>
         <section class="hero">
+            <h2 class="visually-hidden">Hero Section</h2>
             <img src="images/amazon-river.webp" alt="Paisaje de Iquitos" class="hero-img">
             <a href="join.html" class="cta-button">Join</a>
         </section>
@@ -57,43 +63,37 @@
         </div>
 
         <section class="info-section">
-            <!-- EVENTOS (puedes agregar más desde JS si quieres) -->
             <div class="event-card" id="event-card">
                 <h3>Event</h3>
                 <h4>Amazonia Ventures 2025</h4>
                 <p><strong>Date:</strong> October 15, 2025</p>
                 <p><strong>Location:</strong> Iquitos Chamber of Commerce</p>
                 <p><strong>Description:</strong> A regional gathering of entrepreneurs focused on sustainable business,
-                    local
-                    innovation, and cultural exchange in the heart of the Peruvian Amazon.</p>
+                    local innovation, and cultural exchange in the heart of the Peruvian Amazon.</p>
             </div>
 
-            <!-- CLIMA ACTUAL -->
             <div class="weather-card">
                 <h3>Current Weather</h3>
                 <p id="temperature"></p>
                 <p id="town"></p>
-                <p id="description"></p>
+                <p id="weather-description"></p>
                 <p>The current temperature in Iquitos, Peru is <span id="current-temp"></span></p>
-                <div id="weather-icon-container">
-                    <img id="weather-icon" src="" alt="">
-                    <figcaption id="description"></figcaption>
-                </div>
+                <figure id="weather-icon-container">
+                    <img id="weather-icon" src="images/default-weather.svg" alt="Weather icon">
+                    <figcaption id="icon-description"></figcaption>
+                </figure>
             </div>
 
-            <!-- PRONÓSTICO -->
             <div class="forecast-card">
                 <h3>Weather Forecast</h3>
                 <div id="forecast-container"></div>
             </div>
         </section>
 
-
-
         <section class="spotlight">
+            <h2 class="visually-hidden">Spotlight Section</h2>
             <div id="spotlight-container" class="grid"></div>
         </section>
-
     </main>
 
     <footer>
@@ -108,10 +108,7 @@
 
         <p>&copy; <span id="currentyear"></span> Aldana Andrea Portugal Pickling | Peru</p>
         <p id="lastModified"></p>
-
     </footer>
-
-
 </body>
 
 </html>
