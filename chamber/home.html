@@ -23,9 +23,13 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/favicon.svg">
+
     <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
+
 
 </head>
+
 <body>
     <header>
         <img src="images/favicon.svg" alt="site logo" width="30" height="30">
@@ -35,8 +39,8 @@
 
     <nav id="nav-bar" class="navigation">
         <ul>
-            <li class="current"><a href="#">Home</a></li>
-            <li><a href="#">Directory</a></li>
+            <li class="current"><a href="home.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="#">Discover</a></li>
             <li><a href="#">Join</a></li>
         </ul>
@@ -46,26 +50,51 @@
         <section class="hero">
             <img src="images/amazon-river.webp" alt="Paisaje de Iquitos" class="hero-img">
             <button id="join" aria-label="navigation">Join</button>
-            
+
         </section>
 
         <div class="title-area">
             <h1>Home</h1>
         </div>
 
-        <div class="card">
-            <h2 id="town"></h2>
-            <img id="graphic" src="" alt="">
+    <section class="info-section">
+        <!-- EVENTOS (puedes agregar más desde JS si quieres) -->
+        <div class="event-card" id="event-card">
+            <h3>Event</h3>
+            <h4>Amazonía Emprende 2025</h4>
+            <p><strong>Date:</strong> October 15, 2025</p>
+            <p><strong>Location:</strong> Iquitos Chamber of Commerce</p>
+            <p><strong>Description:</strong> A regional gathering of entrepreneurs focused on sustainable business, local
+                innovation, and cultural exchange in the heart of the Peruvian Amazon.</p>
+        </div>
+    
+        <!-- CLIMA ACTUAL -->
+        <div class="weather-card">
+            <h3>Current Weather</h3>
+            <p id="town"></p>
             <p id="description"></p>
             <p id="temperature"></p>
-
+            <p>The current temperature in Iquitos, Peru is <span id="current-temp"></span></p>
+            <div id="weather-icon-container">
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+            </div>
         </div>
+    
+        <!-- PRONÓSTICO -->
+        <div class="forecast-card">
+            <h3>Weather Forecast</h3>
+            <div id="forecast-container"></div>
+        </div>
+    </section>
 
-        <p>The current temperature in Trier, Germany is <span id="current-temp"></span></p>
-        <figure>
-            <img id="weather-icon" src="" alt="">
-            <figcaption></figcaption>
-        </figure>
+
+
+
+        <section class="spotlight">
+            <div id="spotlight-container"></div>
+        </section>
+
     </main>
 
     <footer>
@@ -74,14 +103,16 @@
                     height="16"></a>
             <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
                     height="16"></a>
-            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16"
+                    height="16"></a>
         </div>
-        
+
         <p>&copy; <span id="currentyear"></span> Aldana Andrea Portugal Pickling | Peru</p>
         <p id="lastModified"></p>
 
     </footer>
-    
+
 
 </body>
+
 </html>

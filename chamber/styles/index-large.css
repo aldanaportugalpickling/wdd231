@@ -29,5 +29,24 @@ header,
         border: none;
     }
 
+    .info-section {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1rem;
+    }
     
+    .event-card,
+    .weather-card,
+    .forecast-card {
+        width: 32%;
+    }
+    
+
+    #spotlight-container {
+        display: grid;
+        gap: 1rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
 }
