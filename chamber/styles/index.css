@@ -5,6 +5,7 @@
 
 body {
     background-color: #F5F5F5;
+    color: #333
 }
 
 header {
@@ -18,8 +19,8 @@ header {
 
 header img {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 100%;
+    height: auto;
 }
 
 header span {
@@ -27,7 +28,6 @@ header span {
     font-weight: bold;
     color: #eee;
     font-family: "Playfair Display", serif;
-    margin-left: 12px;
 }
 
 .hamburger {
