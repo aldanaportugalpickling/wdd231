@@ -1,8 +1,8 @@
-//Get day and time
+// Fecha actual y última modificación
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-//Display Hamburger buttom
+// Botón hamburguesa
 const navButton = document.querySelector('#nav-button');
 const navBar = document.querySelector('#nav-bar');
 
@@ -13,20 +13,19 @@ navButton.addEventListener('click', () => {
 
 // Elementos del clima
 const myTown = document.querySelector('#town');
-const myDescription = document.querySelector('#description');
+const myDescription = document.querySelector('#weather-description');
 const myTemperature = document.querySelector('#temperature');
-const myGraphic = document.querySelector('#graphic');
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const figCaption = document.querySelector('figcaption');
+const figCaption = document.querySelector('#icon-description');
 
-// API  OpenWeather
+// API OpenWeather
 const myKey = "66c6ef90f50ed28ef42520446f90f69e";
 const myLat = "-3.7480872947615325";
 const myLong = "-73.25991707321536";
 const myURL = `https://api.openweathermap.org/data/2.5/weather?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
-// Get wetaher datas
+// Obtener datos del clima
 async function apiFetch() {
   try {
     const response = await fetch(myURL);
@@ -41,24 +40,24 @@ async function apiFetch() {
   }
 }
 
-// Display JSON data
+// Mostrar datos del clima
 function displayResults(data) {
+  const iconCode = data.weather[0].icon;
+  const iconURL = `https://openweathermap.org/img/wn/${iconCode}@2x.png`;
+
   myTown.textContent = data.name;
   myDescription.textContent = data.weather[0].description;
-  myTemperature.textContent = `${data.main.temp} °C`;
-  currentTemp.textContent = `${data.main.temp} °C`;
-  weatherIcon.setAttribute('src', `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`);
+  myTemperature.textContent = `${data.main.temp.toFixed(1)} °C`;
+  currentTemp.textContent = `${data.main.temp.toFixed(1)} °C`;
+  weatherIcon.setAttribute('src', iconURL);
   weatherIcon.setAttribute('alt', data.weather[0].description);
   figCaption.textContent = data.weather[0].description;
 }
 
-// Iniciar
+// Iniciar clima
 apiFetch();
 
-
-
-//-----
-
+// API del pronóstico
 const forecastURL = `https://api.openweathermap.org/data/2.5/forecast?lat=${myLat}&lon=${myLong}&appid=${myKey}&units=metric`;
 
 async function getForecast() {
@@ -75,11 +74,11 @@ async function getForecast() {
   }
 }
 
+// Mostrar pronóstico
 function displayForecast(data) {
   const container = document.querySelector("#forecast-container");
-  container.innerHTML = ""; // Limpiar contenido anterior
+  container.innerHTML = "";
 
-  // Filtrar solo una entrada por día (al mediodía)
   const dailyForecasts = data.list.filter(item => item.dt_txt.includes("12:00:00"));
 
   dailyForecasts.slice(0, 3).forEach(forecast => {
@@ -93,6 +92,5 @@ function displayForecast(data) {
   });
 }
 
-// Llamar a la función
+// Iniciar pronóstico
 getForecast();
-
