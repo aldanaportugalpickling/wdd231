@@ -29,23 +29,25 @@ header,
     }
 
     .info-section {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        gap: 1.5rem;
-        margin-bottom: 3rem;
+        display: grid;
+        grid-template-columns: 1.7fr 1fr 1fr;
+        gap: 1rem;
+        margin-bottom: 2rem;
     }
     
     .event-card,
     .weather-card,
     .forecast-card {
-        width: 32%;
+        width: 100%;
     }
     
 
-    #spotlight-container {
+    #spotlight-container  {
         display: grid;
-        gap: 1.5rem;
+        gap: 1rem;
         grid-template-columns: repeat(3, 1fr);
+        
+        
     }
+    
 }
