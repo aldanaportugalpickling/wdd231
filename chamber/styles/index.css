@@ -12,7 +12,6 @@ header {
     grid-template-columns: 24px auto 44px;
     padding: 10px 0px 10px 10px;
     align-items: end;
-    border-bottom: solid 1px #ddd;
     column-gap: 8px;
     background-color: #00695C;
 }
@@ -64,6 +63,7 @@ header span {
     padding: 0;
     background-color: #00695C;
     text-align: center;
+    
 }
 
 .navigation a {
@@ -71,7 +71,8 @@ header span {
     padding: .8rem 10px;
     color: #eee;
     text-decoration: none;
-    border-bottom: 1px solid #ccc
+    border-top: solid 1px #ccc
+    
 }
 
 .navigation li.current {
@@ -80,6 +81,42 @@ header span {
 
 .navigation a:hover {
     background-color: #333333;
+}
+
+/*hero image*/
+
+.hero {
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+}
+
+.hero-img {
+    width: 100%;
+    height: auto;
+    display: block;
+    /*mmm*/
+}
+
+/* Botón Join */
+.cta-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #f4c10f;
+    color: #000;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #e0b000;
 }
 
 .title-area {
@@ -92,14 +129,10 @@ header span {
 
 }
 
-/*home cards */
-
 /* Contenedor general */
 .info-section {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    padding: 1rem;
 }
 
 /* Tarjetas individuales */
@@ -109,7 +142,6 @@ header span {
     background-color: #fff;
     border-radius: 12px;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-    padding: 1rem;
     font-family: 'Lora', serif;
 }
 
@@ -117,19 +149,25 @@ header span {
 .event-card h3,
 .weather-card h3,
 .forecast-card h3 {
+   
     background-color: #00695C;
+    margin: 0;
+    padding: 0.7rem;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
     color: #eee;
     text-align: center;
-    border-radius: 8px;
     font-family: 'Lora', serif;
-    margin-bottom: 0.5rem;
-    padding: 0.7rem;
+    
+   
 }
 
 /* Subtítulo del evento */
 .event-card h4 {
     color: #00695C;
     font-size: 1.1rem;
+    text-align: center;
+    padding: 10px;
    
 }
 
@@ -137,7 +175,7 @@ header span {
 .event-card p,
 .weather-card p,
 .forecast-card p {
-    padding: 0.5rem;
+    padding: 10px;
     margin: 0.3rem 0;
     color: #333;
     font-size: 0.95rem;
@@ -193,11 +231,13 @@ figcaption {
     color: #00695C;
     font-size: 1.2rem;
     margin-bottom: 0.3rem;
+    text-align: center;
 }
 
 .card p {
     margin: 0.2rem 0;
     color: #333;
+    text-align: center;
 }
 
 .card a {

@@ -9,6 +9,7 @@ header,
 
     header {
         grid-template-columns: 24px auto;
+        border-bottom: solid 1px #ddd;
     }
 
     .hamburger {
@@ -17,8 +18,6 @@ header,
 
     .navigation {
         display: block;
-
-        border-bottom: solid 1px #eee;
     }
 
     .navigation ul {
@@ -33,8 +32,8 @@ header,
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-        gap: 1rem;
-        padding: 1rem;
+        gap: 1.5rem;
+        margin-bottom: 3rem;
     }
     
     .event-card,
@@ -46,7 +45,7 @@ header,
 
     #spotlight-container {
         display: grid;
-        gap: 1rem;
+        gap: 1.5rem;
         grid-template-columns: repeat(3, 1fr);
     }
 }
