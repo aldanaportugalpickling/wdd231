@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+
+}
+
+body {
+    background-color: #F5F5F5;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 24px auto 44px;
+    padding: 10px 0px 10px 10px;
+    align-items: end;
+    border-bottom: solid 1px #ddd;
+    column-gap: 8px;
+    background-color: #00695C;
+}
+
+header img {
+    display: block;
+    width: 30px;
+    height: 30px;
+}
+
+header span {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #eee;
+    font-family: "Playfair Display", serif;
+    margin-left: 12px;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: #eee;
+    cursor: pointer;
+    font-size: 2rem;
+}
+
+.hamburger::before {
+    content: "\2630";
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+/***NAVIGATION***/
+
+.navigation {
+    display: none;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #00695C;
+    text-align: center;
+}
+
+.navigation a {
+    display: block;
+    padding: .8rem 10px;
+    color: #eee;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc
+}
+
+.navigation li.current {
+    background-color: rgb(101, 101, 101);
+}
+
+.navigation a:hover {
+    background-color: #333333;
+}
+
+.title-area {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.title-area h1 {
+    color: #333;
+
+}
+
+
+
+/*footer*/
+footer {
+    padding: 1rem 10px;
+    text-align: center;
+    background-color: #eee;
+}
+
+.social {
+    display: flex;
+    justify-content: center;
+    column-gap: 8px;
+}
+
+.social a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border: #ccc dashed 1px;
+    border-radius: 22px;
+}
+
+.social img {
+    width: 24px;
+    height: 24px;
+}
+
+.social a:hover {
+    background-color: #ddd;
+}
+
+#lastModified {
+    color: #00695C;
+    font-size: 15px;
+    min-height: 20px;
+}
