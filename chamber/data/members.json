@@ -1,6 +1,6 @@
 [
   {
-    "name": "Amazon Eco Tours",
+    "name": "Amazon Expeditions",
     "address": "123 Malecón Tarapacá, Iquitos",
     "phone": "+51 987 654 321",
     "website": "https://amazonecotours.pe",
@@ -8,7 +8,7 @@
     "membership": "3"
   },
   {
-    "name": "SelvaTech Solutions",
+    "name": "SelvaTec Digital",
     "address": "456 Grau Avenue, Iquitos",
     "phone": "+51 912 345 678",
     "website": "https://selvatechsolutions.pe",
@@ -16,7 +16,7 @@
     "membership": "2"
   },
   {
-    "name": "Iquitos River Transport",
+    "name": "RiverExpress ",
     "address": "Masusa Port, Iquitos",
     "phone": "+51 999 888 777",
     "website": "https://iquitosriver.pe",
@@ -24,7 +24,7 @@
     "membership": "1"
   },
   {
-    "name": "Amazonian Hotel & Spa",
+    "name": "Hotel Miraflor Amazon",
     "address": "321 Nauta Street, Iquitos",
     "phone": "+51 984 321 654",
     "website": "https://casaamazonica.pe",
@@ -40,7 +40,7 @@
     "membership": "2"
   },
   {
-    "name": "Amazon Legal Advisors",
+    "name": "AmazonLex Consulting",
     "address": "101 Mariscal Cáceres Av., Iquitos",
     "phone": "+51 980 112 233",
     "website": "https://amazonlegal.pe",
@@ -48,7 +48,7 @@
     "membership": "1"
   },
   {
-    "name": "Peru Green Marketing",
+    "name": "Green Jungle",
     "address": "456 Putumayo street, Iquitos",
     "phone": "+51 987 000 111",
     "website": "https://peruverdemkt.pe",
