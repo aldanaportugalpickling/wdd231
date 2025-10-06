@@ -195,6 +195,7 @@ header span {
     font-size: 0.95rem;
 }
 
+
 /* Ícono del clima */
 #weather-icon {
     width: 64px;
@@ -218,7 +219,7 @@ figcaption {
     grid-template-columns: 1fr;
     row-gap: 1rem;
     margin-bottom: 2rem;
-
+    text-align: center;
 }
 
 .card {
@@ -256,6 +257,7 @@ figcaption {
 }
 
 .card a {
+    text-align: center;
     display: block;
     margin-top: 0.5rem;
     color: blue;
