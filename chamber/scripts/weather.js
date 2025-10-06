@@ -74,7 +74,7 @@ async function getForecast() {
   }
 }
 
-// Mostrar pronóstico
+// Forecast
 function displayForecast(data) {
   const container = document.querySelector("#forecast-container");
   container.innerHTML = "";
