@@ -102,16 +102,17 @@ header span {
 .menu button {
     padding: 0.6rem 1.4rem;
     border: 2px solid #ccc;
-    color: #333;
+    color: #000;
+    background-color: #e0b000;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: bold;
     border-radius: 8px;
     cursor: pointer;
     margin-inline-start: 20px;
 }
 
 .menu button:hover {
-    background: #cbb326ff;
+    background: #ccc ;
 }
 
 .card {

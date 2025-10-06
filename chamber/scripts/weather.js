@@ -87,7 +87,7 @@ function displayForecast(data) {
     const temp = Math.round(forecast.main.temp);
 
     const forecastText = document.createElement("p");
-    forecastText.textContent = `${dayName}: ${temp} °C`;
+    forecastText.innerHTML = `${dayName}:  <strong> ${temp} °C </strong>`;
     container.appendChild(forecastText);
   });
 }
