@@ -47,7 +47,7 @@ function displayResults(data) {
 
   myTown.textContent = data.name;
   myDescription.textContent = data.weather[0].description;
-  myTemperature.textContent = `${data.main.temp.toFixed(1)} °C`;
+  myTemperature.innerHTML = `<strong> ${data.main.temp.toFixed(1)} °C </strong>`;
   currentTemp.textContent = `${data.main.temp.toFixed(1)} °C`;
   weatherIcon.setAttribute('src', iconURL);
   weatherIcon.setAttribute('alt', data.weather[0].description);

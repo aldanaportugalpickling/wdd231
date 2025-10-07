@@ -79,7 +79,7 @@ header span {
 }
 
 .navigation a:hover {
-    background-color: #333333;
+    background-color: #333;
 }
 
 /*hero image*/
@@ -115,7 +115,7 @@ header span {
     bottom: 1rem;
     right: 1rem;
     background-color: #e0b000;
-    color: #000;
+    color: #202020;
     padding: 0.75rem 1.25rem;
     border-radius: 5px;
     font-weight: bold;
@@ -150,8 +150,7 @@ header span {
 .event-card,
 .weather-card,
 .forecast-card {
-    background-color: #fff;
-    border-radius: 12px;
+    background-color: #ddd;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
     font-family: 'Lora', serif;
 }
@@ -164,8 +163,6 @@ header span {
     background-color: #00695C;
     margin: 0;
     padding: 0.7rem;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
     color: #eee;
     text-align: center;
     font-family: 'Lora', serif;
@@ -176,7 +173,6 @@ header span {
 /*Title Card event */
 .event-card h4 {
     color: #00695C;
-    font-size: 1.1rem;
     text-align: center;
 
 }
