@@ -45,11 +45,14 @@
     </nav>
 
     <main>
+
         <div class="title-area">
             <h1>Join</h1>
         </div>
 
+
         <section class="form-section">
+            <h2>Membership Application Form</h2>
             <form method="get" action="thankyou.html">
                 <label for="firstName">First Name</label>
                 <input type="text" id="firstName" name="firstName" title="Enter your first name"
@@ -78,20 +81,34 @@
                     <input type="text" id="organization" name="organization" title="Enter your organization name"
                         autocomplete="organization" required>
                 </label>
-
-                <label for="membership">Membership Level:
-                    <select id="membership" name="membership" title="Select membership level" required>
-                        <option value="">Select...</option>
-                        <option value="np">Non Profit</option>
-                        <option value="bronze">Bronze</option>
-                        <option value="silver">Silver</option>
-                        <option value="gold">Gold</option>
-                    </select>
-                </label>
-
+               
                 <label for="description">Business Description:
                     <textarea id="description" name="description" title="Describe your business"></textarea>
                 </label>
+
+                <fieldset>
+                    <legend>Membership Level:</legend>
+                
+                    <label>
+                        <input type="checkbox" name="membership" value="np">
+                        Non Profit
+                    </label><br>
+                
+                    <label>
+                        <input type="checkbox" name="membership" value="bronze">
+                        Bronze
+                    </label><br>
+                
+                    <label>
+                        <input type="checkbox" name="membership" value="silver">
+                        Silver
+                    </label><br>
+                
+                    <label>
+                        <input type="checkbox" name="membership" value="gold">
+                        Gold
+                    </label>
+                </fieldset>
 
                 <!-- Timestamp oculto -->
                 <input type="hidden" id="timestamp" name="timestamp">
@@ -102,6 +119,7 @@
             </form>
 
         </section>
+
 
 
 
@@ -176,6 +194,7 @@
 
     </main>
 
+    
 
     <footer>
         <div class="social">
