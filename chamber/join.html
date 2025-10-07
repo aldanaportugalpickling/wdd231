@@ -50,106 +50,111 @@
             <h1>Join</h1>
         </div>
 
+        <div class="content-area">
 
-        <section class="form-section">
-            <h2>Membership Application Form</h2>
-            <form method="get" action="thankyou.html">
-                <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" title="Enter your first name"
-                    autocomplete="given-name" required>
-                <label for="lastName">Last Name:
-                    <input type="text" id="lastName" name="lastName" title="Enter your last name"
-                        autocomplete="family-name" required>
-                </label>
-
-                <label for="title">Organization Title:
-                    <input type="text" id="title" name="title" title="Enter your title"
-                        autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
-                </label>
-
-                <label for="email">Email:
-                    <input type="email" id="email" name="email" title="Enter your email" autocomplete="email"
-                        placeholder="you@example.com" required>
-                </label>
-
-                <label for="phone">Cell Phone:
-                    <input type="tel" id="phone" name="phone" title="Enter your phone number" autocomplete="tel"
-                        required>
-                </label>
-
-                <label for="organization">Organization:
-                    <input type="text" id="organization" name="organization" title="Enter your organization name"
-                        autocomplete="organization" required>
-                </label>
-               
-                <label for="description">Business Description:
-                    <textarea id="description" name="description" title="Describe your business"></textarea>
-                </label>
-
-                <fieldset>
-                    <legend>Membership Level:</legend>
-                
-                    <label>
-                        <input type="checkbox" name="membership" value="np">
-                        Non Profit
-                    </label><br>
-                
-                    <label>
-                        <input type="checkbox" name="membership" value="bronze">
-                        Bronze
-                    </label><br>
-                
-                    <label>
-                        <input type="checkbox" name="membership" value="silver">
-                        Silver
-                    </label><br>
-                
-                    <label>
-                        <input type="checkbox" name="membership" value="gold">
-                        Gold
+            <section class="form-section">
+                <h2>Membership Application Form</h2>
+                <form method="get" action="thankyou.html">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="firstName" title="Enter your first name"
+                        autocomplete="given-name" required>
+                    <label for="lastName">Last Name:
+                        <input type="text" id="lastName" name="lastName" title="Enter your last name"
+                            autocomplete="family-name" required>
                     </label>
-                </fieldset>
 
-                <!-- Timestamp oculto -->
-                <input type="hidden" id="timestamp" name="timestamp">
-                
-                <button type="submit">Submit Application</button>
+                    <label for="title">Organization Title:
+                        <input type="text" id="title" name="title" title="Enter your title"
+                            autocomplete="organization-title" pattern="[A-Za-z\s\-]{7,}" required>
+                    </label>
+
+                    <label for="email">Email:
+                        <input type="email" id="email" name="email" title="Enter your email" autocomplete="email"
+                            placeholder="you@example.com" required>
+                    </label>
+
+                    <label for="phone">Cell Phone:
+                        <input type="tel" id="phone" name="phone" title="Enter your phone number" autocomplete="tel"
+                            required>
+                    </label>
+
+                    <label for="organization">Organization:
+                        <input type="text" id="organization" name="organization" title="Enter your organization name"
+                            autocomplete="organization" required>
+                    </label>
+
+                    <label for="description">Business Description:
+                        <textarea id="description" name="description" title="Describe your business"></textarea>
+                    </label>
+
+                    <fieldset>
+                        <legend>Membership Level:</legend>
+
+                        <label>
+                            <input type="checkbox" name="membership" value="np">
+                            Non Profit
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="membership" value="bronze">
+                            Bronze
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="membership" value="silver">
+                            Silver
+                        </label><br>
+
+                        <label>
+                            <input type="checkbox" name="membership" value="gold">
+                            Gold
+                        </label>
+                    </fieldset>
+
+                    <!-- Timestamp oculto -->
+                    <input type="hidden" id="timestamp" name="timestamp">
+
+                    <button type="submit">Submit Application</button>
+
+
                 </form>
 
-            </form>
-
-        </section>
+            </section>
 
 
 
 
-        <section class="membership">
-            <h2>Membership Levels</h2>
+            <section class="membership">
+                <h2>Membership Levels</h2>
 
+                
 
-            <div class="card">
-                <h3>Non Profit Membership</h3>
-                <button class="learn-btn" data-modal="modal-np">Learn More</button>
-            </div>
+                    <div class="card">
+                        <h3>Non Profit Membership</h3>
+                        <button class="learn-btn" data-modal="modal-np">Learn More</button>
+                    </div>
 
-            <!-- Bronze -->
-            <div class="card">
-                <h3>Bronze Membership</h3>
-                <button class="learn-btn" data-modal="modal-bronze">Learn More</button>
-            </div>
+                    <!-- Bronze -->
+                    <div class="card">
+                        <h3>Bronze Membership</h3>
+                        <button class="learn-btn" data-modal="modal-bronze">Learn More</button>
+                    </div>
 
-            <!-- Silver -->
-            <div class="card">
-                <h3>Silver Membership</h3>
-                <button class="learn-btn" data-modal="modal-silver">Learn More</button>
-            </div>
+                    <!-- Silver -->
+                    <div class="card">
+                        <h3>Silver Membership</h3>
+                        <button class="learn-btn" data-modal="modal-silver">Learn More</button>
+                    </div>
 
-            <!-- Gold -->
-            <div class="card">
-                <h3>Gold Membership</h3>
-                <button class="learn-btn" data-modal="modal-gold">Learn More</button>
-            </div>
-        </section>
+                    <!-- Gold -->
+                    <div class="card">
+                        <h3>Gold Membership</h3>
+                        <button class="learn-btn" data-modal="modal-gold">Learn More</button>
+                    </div>
+               
+
+            </section>
+        </div>
 
         <!-- 🟡 Modales (uno por nivel) -->
         <dialog id="modal-np">
@@ -190,11 +195,12 @@
             <p>Cost: $300/year</p>
             <button class="close-btn">Close</button>
         </dialog>
-        
+
+
 
     </main>
 
-    
+
 
     <footer>
         <div class="social">
