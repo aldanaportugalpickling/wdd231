@@ -4,7 +4,6 @@ document.getElementById("lastModified").textContent = `Last Modified: ${document
 //Guardar fecha y hora exacta cada que envias o abras un formulario.
 document.querySelector("#timestamp").value = new Date().toLocaleString();
 
-// 🎬 Lógica para abrir y cerrar modales
 const openButtons = document.querySelectorAll(".learn-btn");
 const closeButtons = document.querySelectorAll(".close-btn");
 
