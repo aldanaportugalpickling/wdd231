@@ -31,10 +31,10 @@
 
     /* RESPONSIVE - Laptop y pantallas grandes */
 
-       .content-area {
+    .content-area {
         display: grid;
         grid-template-columns: 1.7fr 1fr;
         gap: 3rem;
 
-       }
+    }
 }
