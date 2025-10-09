@@ -82,6 +82,10 @@ header span {
     background-color: #333333;
 }
 
+.title-area {
+    margin: 0px 15px;
+}
+
 /*MAIN FORM */
 
 .form-section {
@@ -106,6 +110,7 @@ form label {
     font-weight: bold;
 }
 
+
 form input,
 form textarea {
     width: 100%;
@@ -114,18 +119,13 @@ form textarea {
     border: 1px solid #ccc;
     margin-top: 0.3rem;
 }
+
 fieldset {
     margin-top: 1rem;
     border: none;
     padding: 0; /*mmmmmm*/
 }
 
-fieldset {
-    display: flex;
-    flex-direction: column;
-    gap: 0.6rem;
-    padding-top: 0.5rem;
-}
 
 
 legend {
@@ -159,15 +159,19 @@ button[type="submit"]:hover {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
+    margin-bottom: 20rem;
+    
 }
 
-.membership h2 {
+.subtitle h2 {
     color: #00695C;
     text-align: center;
-    margin-bottom: auto ;
+    margin-top: 35px;
     font-family: 'Lora', serif;
     font-size: 25px;
+    font-weight: bold;
 }
+
 
 .card {
     background-color: #ddd;
@@ -197,6 +201,11 @@ button[type="submit"]:hover {
 
 .learn-btn:hover {
     background-color: #004d40;
+}
+
+.content-area {
+    margin: 0px 15px 60px 15px;
+
 }
 
 /* DIALOGS */
@@ -273,3 +282,19 @@ footer {
 
 
 
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.membership {
+    animation: fadeInUp 0.8s ease-out forwards;
+}
