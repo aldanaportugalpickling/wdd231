@@ -1,6 +1,6 @@
 
 body {
-    background-color: #3d3b3b;
+    background-color: #434343;
     font-family: 'Open Sans', sans-serif;
     color: #e8e8e8;
     line-height: 1.6;
@@ -43,13 +43,13 @@ img {
     height: auto;
     border: 2px solid #FFD700;
     border-radius: 8px;
+    aspect-ratio: 1 / 1;
 }
 
 
 footer {
     text-align: center;
     font-size: 0.9em;
-    color: #666;
     border-top: 2px solid #e8e8e8;
     
 }
@@ -61,6 +61,12 @@ footer {
     footer {
         max-width: 900px;
         margin: 0 auto 20px auto;
+    }
+
+    .wireframes {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
     }
 
 }
