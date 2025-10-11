@@ -1,8 +1,8 @@
 
 body {
-    background-color: #cdcdcd;
+    background-color: #3d3b3b;
     font-family: 'Open Sans', sans-serif;
-    color: #333;
+    color: #e8e8e8;
     line-height: 1.6;
 }
 
@@ -29,7 +29,7 @@ h2 {
 p,
 li {
     font-size: 1em;
-    color: #333;
+    color: #e8e8e8;
 }
 
 ul {
