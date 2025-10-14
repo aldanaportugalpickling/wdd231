@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Plaza de Armas de Iquitos",
+    "address": "Jr. Próspero, Iquitos 16001",
+    "description": "Centro histórico y punto de encuentro con arquitectura colonial y ambiente vibrante.",
+    "image": "images/plaza.webp"
+  },
+  {
+    "name": "Malecón Tarapacá",
+    "address": "Malecón Tarapacá, Iquitos 16001",
+    "description": "Paseo escénico junto al río con vistas, esculturas y restaurantes.",
+    "image": "images/malecon.webp"
+  },
+  {
+    "name": "Casa de Fierro",
+    "address": "Jr. Próspero 410, Iquitos 16001",
+    "description": "Diseñada por Gustave Eiffel, ícono arquitectónico de la época del caucho.",
+    "image": "images/casa-fierro.webp"
+  },
+  {
+    "name": "Mercado de Belén",
+    "address": "Av. La Marina, Iquitos 16001",
+    "description": "Mercado flotante con productos exóticos y vida local auténtica.",
+    "image": "images/belen.webp"
+  },
+  {
+    "name": "Reserva Nacional Pacaya Samiria",
+    "address": "Loreto, Perú",
+    "description": "Área protegida con biodiversidad única, ideal para ecoturismo.",
+    "image": "images/pacaya.webp"
+  },
+  {
+    "name": "Museo Amazónico",
+    "address": "Malecón Tarapacá 386, Iquitos 16001",
+    "description": "Exhibiciones sobre culturas indígenas y arte amazónico.",
+    "image": "images/museo.webp"
+  },
+  {
+    "name": "Puerto de Bellavista Nanay",
+    "address": "Bellavista Nanay, Iquitos 16001",
+    "description": "Punto de partida para tours fluviales y gastronomía local.",
+    "image": "images/nanay.webp"
+  },
+  {
+    "name": "Centro de Rescate Amazónico (CREA)",
+    "address": "Carretera Iquitos-Nauta Km 4.5",
+    "description": "Centro de conservación de manatíes y fauna amazónica.",
+    "image": "images/crea.webp"
+  }
+]
