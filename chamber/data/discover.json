@@ -1,0 +1,50 @@
+[
+  {
+    "name": "Iquitos Main Square",
+    "address": "Jr. Próspero, Iquitos 16001",
+    "description": "Historic center and gathering spot with colonial architecture and a vibrant atmosphere.",
+    "image": "images/plaza.webp"
+  },
+  {
+    "name": "Tarapacá Boardwalk",
+    "address": "Malecón Tarapacá, Iquitos 16001",
+    "description": "Scenic riverside promenade with views, sculptures, and restaurants.",
+    "image": "images/malecon-tarapaca.webp"
+  },
+  {
+    "name": "Iron House",
+    "address": "Jr. Próspero 410, Iquitos 16001",
+    "description": "Designed by Gustave Eiffel, an architectural icon from the rubber boom era.",
+    "image": "images/casa-fierro.webp"
+  },
+  {
+    "name": "Belén Market",
+    "address": "Av. La Marina, Iquitos 16001",
+    "description": "Floating market with exotic products and authentic local life.",
+    "image": "images/belen.webp"
+  },
+  {
+    "name": "Pacaya Samiria National Reserve",
+    "address": "Loreto, Peru",
+    "description": "Protected area with unique biodiversity, ideal for ecotourism.",
+    "image": "images/pacaya.webp"
+  },
+  {
+    "name": "Amazonian Museum",
+    "address": "Malecón Tarapacá 386, Iquitos 16001",
+    "description": "Exhibits on indigenous cultures and Amazonian art.",
+    "image": "images/museo.webp"
+  },
+  {
+    "name": "Nanay Bridge",
+    "address": "Iquitos, Loreto 16001",
+    "description": "Modern cable-stayed bridge connecting Iquitos with surrounding districts, offering panoramic views of the Nanay River.",
+    "image": "images/puente-nanay.webp"
+  },
+  {
+    "name": "Amazon Rescue Center (CREA)",
+    "address": "Iquitos-Nauta Highway Km 4.5",
+    "description": "Conservation center for manatees and Amazonian wildlife.",
+    "image": "images/crea.webp"
+  }
+]

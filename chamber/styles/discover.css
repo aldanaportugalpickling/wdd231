@@ -86,9 +86,95 @@ header span {
     margin: 0px 15px;
 }
 
+/*MAIN*/
+
+.visit-box {
+    background-color: #f0f8ff;
+    border: 2px solid #00695C;
+    border-radius: 8px;
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    color: #202020;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
 
 
 
+
+.card-grid {
+    display: grid;
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+
+    gap: 1rem;
+    padding: 1rem;
+}
+
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: scale(1.03);
+}
+
+.card h2 {
+    color: #00695C;
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+}
+
+.card img {
+    max-width: 300px;
+    height: 200px;
+    border-radius: 6px;
+}
+
+.card address {
+    font-family: 'Lora', serif;
+    text-align: center;
+    font-weight: bold;
+}
+
+.card p {
+    margin: 10px;
+    font-family: 'Lora', serif;
+    padding: 5px 0px 10px 0px
+}
+
+.card button {
+    background-color: #e0b000;
+    color: #202020;
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+    background-color: #ccc;
+}
 
 
 
