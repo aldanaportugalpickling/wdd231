@@ -1,3 +1,17 @@
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+
+// Hamburger button
+const navButton = document.querySelector('#nav-button');
+const navBar = document.querySelector('#nav-bar');
+
+navButton.addEventListener('click', () => {
+  navButton.classList.toggle('show');
+  navBar.classList.toggle('show');
+});
+
+
+
 document.addEventListener("DOMContentLoaded", () => {
   const visitMessage = document.getElementById("visit-message");
   const lastVisit = localStorage.getItem("lastVisit");

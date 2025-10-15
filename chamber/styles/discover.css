@@ -91,47 +91,43 @@ header span {
     border: 2px solid #00695C;
     border-radius: 8px;
     padding: 1rem;
-    margin: 1rem auto;
+    margin: 0px 10px;
     max-width: 600px;
     text-align: center;
     font-family: 'Poppins', sans-serif;
     font-size: 1rem;
     color: #202020;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-
 
 
 .card-grid {
     display: grid;
     grid-template-columns: 1fr;
     gap: 1rem;
-    padding: 1rem;
+    margin: 20px 20px;
 }
 
 
 .card {
-    display: grid;
     grid-template-areas:
         "title"
         "image"
         "address"
         "description"
         "button";
-    grid-template-columns: 1fr;
-    gap: 0.5rem;
-    padding: 1rem;
-
+    
+    /*padding: 0.7rem;*/
     background-color: #fff;
     border: 1px solid #ccc;
-    border-radius: 8px;
+    border-radius: 12px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    
+    padding: 1rem;
+
 }
 
 
-/* --- Asignamos las áreas --- */
+/* --- Assing the areas --- */
 .card figure {
     grid-area: image;
 }
@@ -161,19 +157,18 @@ header span {
 }
 
 .card img {
-    max-width: 300px;
+    width: 300px;
     height: 200px;
-    border-radius: 6px;
+    border-radius: 12px;
 }
 
 .card address {
     font-family: 'Lora', serif;
-    text-align: center;
     font-weight: bold;
 }
 
 .card p {
-    margin: 10px;
+    
     font-family: 'Lora', serif;
     padding: 5px 0px 10px 0px
 }
@@ -194,8 +189,6 @@ header span {
 .card button:hover {
     background-color: #ccc;
 }
-
-
 
 
 
