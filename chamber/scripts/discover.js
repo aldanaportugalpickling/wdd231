@@ -1,4 +1,19 @@
-// Mensaje de visita
+document.getElementById("currentyear").textContent = new Date().getFullYear();
+document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
+
+// Hamburger button
+const navButton = document.querySelector('#nav-button');
+const navBar = document.querySelector('#nav-bar');
+
+navButton.addEventListener('click', () => {
+  navButton.classList.toggle('show');
+  navBar.classList.toggle('show');
+});
+
+
+
+
+// Message based on Last Visit
 const visitMessage = document.getElementById("visit-message");
 const lastVisit = localStorage.getItem("lastVisit");
 const now = Date.now();
@@ -13,7 +28,7 @@ if (!lastVisit) {
 }
 localStorage.setItem("lastVisit", now);
 
-// Cargar JSON y generar tarjetas
+// Reload JSON data and create cards
 fetch("data/discover.json")
   .then(res => res.json())
   .then(places => {
