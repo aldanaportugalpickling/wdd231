@@ -102,18 +102,8 @@ header span {
 
 
 
-
 .card-grid {
     display: grid;
-    grid-template-areas:
-        "card1"
-        "card2"
-        "card3"
-        "card4"
-        "card5"
-        "card6"
-        "card7"
-        "card8";
     grid-template-columns: 1fr;
     gap: 1rem;
     padding: 1rem;
@@ -121,18 +111,48 @@ header span {
 
 
 .card {
+    display: grid;
+    grid-template-areas:
+        "title"
+        "image"
+        "address"
+        "description"
+        "button";
+    grid-template-columns: 1fr;
+    gap: 0.5rem;
+    padding: 1rem;
+
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
-    padding: 1rem;
-    transition: transform 0.3s ease;
+    
 }
 
-.card:hover {
-    transform: scale(1.03);
+
+/* --- Asignamos las áreas --- */
+.card figure {
+    grid-area: image;
 }
+
+.card h2 {
+    grid-area: title;
+}
+
+.card address {
+    grid-area: address;
+}
+
+.card p {
+    grid-area: description;
+}
+
+.card button {
+    grid-area: button;
+    
+}
+
 
 .card h2 {
     color: #00695C;
@@ -168,6 +188,7 @@ header span {
     cursor: pointer;
     font-family: 'Poppins', sans-serif;
     transition: background-color 0.3s ease;
+    justify-self: center;
 }
 
 .card button:hover {
