@@ -40,34 +40,24 @@
         grid-template-columns: 1fr 1.4fr;
         /* ancho imagen / texto */
         text-align: left;
-            column-gap: 1.5rem;
-                /* espacio horizontal constante */
-                
+        column-gap: 1.5rem;
+        /* espacio horizontal constante */
+
     }
-            
-    
 
     .card button {
-        width: auto;
         align-self: start;
         justify-self: start;
     }
-    
-        .visit-box {
-            margin: 0 auto;
-        }
 
-                .card figure {
-                    grid-area: image;
-                    margin: 0;
-                    width: 100%;
-                        height: 200px;
-                        /* 🔹 altura fija para que no se mueva */
-                        overflow: hidden;
-                        /* 🔹 evita que la imagen se salga del marco */
-                        border-radius: 12px;
-                    /* para que no empuje el contenido */
-                }
+    .visit-box {
+        margin: 0 auto;
+    }
 
-                       
+    .card figure {
+        grid-area: image;
+        margin: 0;
+    }
+
+
 }

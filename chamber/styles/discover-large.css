@@ -33,36 +33,25 @@
     .card-grid {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+
     }
 
-         .card {
-             display: grid;
-             grid-template-areas:
-                 "image title"
-                 "image address"
-                 "image description"
-                 "image button";
-             grid-template-columns: 1fr 1.4fr;
-             /* ancho imagen / texto */
-             text-align: left
-         }
-    
-         .card button {
-             width: auto;
-             align-self: start;
-             justify-self: start;
-         }
-    
-         .visit-box {
-             margin: 0 auto;
-         }
-    
-         .card figure {
-             grid-area: image;
-             margin: 0;
-             /* para que no empuje el contenido */
-         }
 
-                
+    .card {
+        display: grid;
+        grid-template-areas:
+            "image title"
+            "image address"
+            "image description"
+            "image button";
+        grid-template-columns: 1fr 1.4fr;
+        /* ancho imagen / texto */
+        text-align: left;
+        column-gap: 1.5rem;
+        /* espacio horizontal constante */
+
+    }
+
+
 
 }

@@ -44,7 +44,7 @@ document.addEventListener("DOMContentLoaded", () => {
         card.innerHTML = `
           <h2>${place.name}</h2>
           <figure>
-            <img class="opac" src="${place.image}" alt="${place.name}" width="300" height="200" loading="lazy">
+            <img src="${place.image}" alt="${place.name}" width="330" height="220" loading="lazy">
           </figure>
           <address>${place.address}</address>
           <p>${place.description}</p>
