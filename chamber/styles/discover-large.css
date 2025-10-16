@@ -57,7 +57,6 @@
   .card figure {
       grid-area: image;
       margin: 0;
-      /* altura fija para todas las imágenes */
       overflow: hidden;
   }
 
