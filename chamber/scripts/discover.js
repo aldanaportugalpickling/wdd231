@@ -1,8 +1,8 @@
-//get current year and last modified
+// ==== Current year & last modified ====
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
-// Hamburger button
+// ==== Hamburger button ====
 const navButton = document.querySelector('#nav-button');
 const navBar = document.querySelector('#nav-bar');
 
@@ -11,8 +11,7 @@ navButton.addEventListener('click', () => {
   navBar.classList.toggle('show');
 });
 
-
-//local storage for last visit message
+// ==== Local storage: last visit message ====
 document.addEventListener("DOMContentLoaded", () => {
   const visitMessage = document.getElementById("visit-message");
   const lastVisit = Number(localStorage.getItem("lastVisit"));
@@ -29,25 +28,48 @@ document.addEventListener("DOMContentLoaded", () => {
   }
   localStorage.setItem("lastVisit", now);
 
+  // ==== Load places from JSON ====
   fetch("data/discover.json")
     .then(res => res.json())
     .then(places => {
       const container = document.getElementById("card-container");
 
       places.forEach(place => {
+        // Card container
         const card = document.createElement("section");
         card.classList.add("card");
-        card.innerHTML = `
-          <h2>${place.name}</h2>
-          <figure>
-            <img src="${place.image}" alt="${place.name}" width="330" height="220" loading="lazy">
-          </figure>
-          <address>${place.address}</address>
-          <p>${place.description}</p>
-          <button class="more-info">More Info</button>
-        `;
 
-        // add dialog for additional info
+        // Name
+        const h2 = document.createElement("h2");
+        h2.textContent = place.name;
+
+        // Figure & lazy-loaded image
+        const figure = document.createElement("figure");
+        const img = document.createElement("img");
+        img.src = place.image;
+        img.alt = place.name;
+        img.width = 330;
+        img.height = 220;
+        img.loading = "lazy"; // lazy load activado
+        figure.appendChild(img);
+
+        // Address
+        const address = document.createElement("address");
+        address.textContent = place.address;
+
+        // Description
+        const desc = document.createElement("p");
+        desc.textContent = place.description;
+
+        // More Info button
+        const button = document.createElement("button");
+        button.textContent = "More Info";
+        button.classList.add("more-info");
+
+        card.append(h2, figure, address, desc, button);
+        container.appendChild(card);
+
+        // Dialog for extra info
         const dialog = document.createElement("dialog");
         dialog.innerHTML = `
           ${getAdditionalInfo(place.name)}
@@ -55,16 +77,14 @@ document.addEventListener("DOMContentLoaded", () => {
         `;
         document.body.appendChild(dialog);
 
-        card.querySelector(".more-info").addEventListener("click", () => dialog.showModal());
+        button.addEventListener("click", () => dialog.showModal());
         dialog.querySelector(".close-dialog").addEventListener("click", () => dialog.close());
-
-        container.appendChild(card);
       });
     })
     .catch(err => console.error("Error loading JSON:", err));
 });
 
-// Information additional function for each place
+// ==== Additional info function ====
 function getAdditionalInfo(name) {
   switch(name) {
     case "Iquitos Main Square":
@@ -72,8 +92,8 @@ function getAdditionalInfo(name) {
               <p><strong>Tip:</strong> Visit in the evening for street performers and local food stalls.</p>`;
     case "Tarapaca Boardwalk":
       return `<p><strong>Fun Fact:</strong> Popular riverside promenade with sculptures along the walkway.</p>
-    <p><strong>Tip:</strong> Great spot for sunrise photography along the river.</p>
-    <p><strong>History:</strong> This boardwalk has been a gathering place for locals and tourists since the early 20th century.</p>`;
+              <p><strong>Tip:</strong> Great spot for sunrise photography along the river.</p>
+              <p><strong>History:</strong> Gathering place since the early 20th century.</p>`;
     case "Iron House":
       return `<p><strong>Fun Fact:</strong> Iron sheets were shipped from France in the 19th century.</p>
               <p><strong>History:</strong> Designed by Belgian engineer Joseph Danly, relic of the rubber boom era.</p>`;
