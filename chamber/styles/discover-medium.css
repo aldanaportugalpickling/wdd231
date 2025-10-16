@@ -53,15 +53,7 @@
     }
 
     .card figure {
-        grid-area: image;
         margin: 0;
-    }
-
-    .card img {
-        width: 100%;
-        height: 220px;
-        border-radius: 12px;
-        display: block;
     }
 
 
