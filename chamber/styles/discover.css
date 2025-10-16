@@ -117,7 +117,6 @@ header span {
         "description"
         "button";
 
-    /*padding: 0.7rem;*/
     background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 12px;
@@ -126,7 +125,6 @@ header span {
     padding: 1rem;
 
 }
-
 
 /* --- Assing the areas --- */
 .card figure {
@@ -164,7 +162,6 @@ header span {
     border-radius: 12px;
     display: block;
 }
-
 
 
 .card address {
