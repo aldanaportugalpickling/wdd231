@@ -193,6 +193,39 @@ header span {
     background-color: #ccc;
 }
 
+/* Dialog styling */
+dialog {
+    border: 1px solid black;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 400px;
+    width: 90%;
+    font-family: 'Lora', serif;
+}
+
+/* Centrado en la pantalla */
+dialog::backdrop {
+    background-color: rgb(0 0 0 / 50%);
+}
+
+/* Botón de cerrar */
+dialog button.close-dialog {
+    background-color: #e0b000;
+    color: #202020;
+    border: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    transition: background-color 0.3s ease;
+    margin-top: 1rem;
+}
+
+dialog button.close-dialog:hover {
+    background-color: #ccc;
+}
 
 
 /*FOOTER*/

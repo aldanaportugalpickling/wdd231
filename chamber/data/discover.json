@@ -1,24 +1,24 @@
 [
   {
     "name": "Iquitos Main Square",
-    "address": "Jr. Próspero, Iquitos 16001, Peru",
+    "address": "Jr. Prospero, Iquitos 16001, Peru",
     "description": "Historic center and gathering spot with colonial architecture and a vibrant atmosphere.",
     "image": "images/plaza.webp"
   },
   {
-    "name": "Tarapacá Boardwalk",
-    "address": "Malecón Tarapacá, Iquitos 16001, Peru",
+    "name": "Tarapaca Boardwalk",
+    "address": "Tarapaca Boardwalk, Iquitos 16001, Peru",
     "description": "Scenic riverside promenade with views, sculptures, and restaurants.",
     "image": "images/malecon-tarapaca.webp"
   },
   {
     "name": "Iron House",
-    "address": "410 Jr. Próspero, Iquitos 16001, Peru",
+    "address": "410 Jr. Prospero, Iquitos 16001, Peru",
     "description": "Designed by Gustave Eiffel, an architectural icon from the rubber boom era.",
     "image": "images/casa-fierro.webp"
   },
   {
-    "name": "Belén Market",
+    "name": "Belen Market",
     "address": "Av. La Marina, Iquitos 16001, Peru",
     "description": "Floating market with exotic products and authentic local life.",
     "image": "images/belen.webp"
@@ -31,7 +31,7 @@
   },
   {
     "name": "Amazonian Museum",
-    "address": "386 Malecón Tarapacá, Iquitos 16001, Peru",
+    "address": "386 Tarapaca Boardwalk, Iquitos 16001, Peru",
     "description": "Exhibits on indigenous cultures and Amazonian art.",
     "image": "images/museo.webp"
   },
