@@ -33,7 +33,7 @@
     "name": "Amazonian Museum",
     "address": "386 Tarapaca Boardwalk, Iquitos 16001, Peru",
     "description": "Exhibits on indigenous cultures and Amazonian art.",
-    "image": "iamges/museo.webp"
+    "image": "images/museo.webp"
   },
   {
     "name": "Nanay Bridge",
@@ -45,6 +45,6 @@
     "name": "Amazon Rescue Center (CREA)",
     "address": "Iquitos-Nauta Highway Km 4.5, Iquitos 16001, Peru",
     "description": "Conservation center for manatees and Amazonian wildlife.",
-    "image": "iamges/crea.webp"
+    "image": "images/crea.webp"
   }
 ]
