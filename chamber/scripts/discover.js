@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
           <button class="more-info">More Info</button>
         `;
 
-        // Crear dialog con información adicional
+        // add dialog for additional info
         const dialog = document.createElement("dialog");
         dialog.innerHTML = `
           ${getAdditionalInfo(place.name)}
@@ -64,19 +64,20 @@ document.addEventListener("DOMContentLoaded", () => {
     .catch(err => console.error("Error loading JSON:", err));
 });
 
-// Información adicional con párrafos y negrita
+// Information additional function for each place
 function getAdditionalInfo(name) {
   switch(name) {
     case "Iquitos Main Square":
       return `<p><strong>Fun Fact:</strong> Historic center with colonial architecture.</p>
               <p><strong>Tip:</strong> Visit in the evening for street performers and local food stalls.</p>`;
-    case "Tarapacá Boardwalk":
-      return `<p><strong>Fun Fact:</strong> Popular riverside promenade with sculptures.</p>
-              <p><strong>Tip:</strong> Great spot for sunrise photography along the river.</p>`;
+    case "Tarapaca Boardwalk":
+      return `<p><strong>Fun Fact:</strong> Popular riverside promenade with sculptures along the walkway.</p>
+    <p><strong>Tip:</strong> Great spot for sunrise photography along the river.</p>
+    <p><strong>History:</strong> This boardwalk has been a gathering place for locals and tourists since the early 20th century.</p>`;
     case "Iron House":
       return `<p><strong>Fun Fact:</strong> Iron sheets were shipped from France in the 19th century.</p>
               <p><strong>History:</strong> Designed by Belgian engineer Joseph Danly, relic of the rubber boom era.</p>`;
-    case "Belén Market":
+    case "Belen Market":
       return `<p><strong>Fun Fact:</strong> Some stalls float during rainy season.</p>
               <p><strong>Tip:</strong> Try local fruits and observe floating houses.</p>`;
     case "Pacaya Samiria National Reserve":
