@@ -42,7 +42,7 @@
                  "image address"
                  "image description"
                  "image button";
-             grid-template-columns: 1fr 1.2fr;
+             grid-template-columns: 1fr 1.4fr;
              /* ancho imagen / texto */
              text-align: left
          }
@@ -62,5 +62,7 @@
              margin: 0;
              /* para que no empuje el contenido */
          }
+
+                
 
 }

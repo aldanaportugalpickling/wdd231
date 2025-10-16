@@ -1,3 +1,4 @@
+//get current year and last modified
 document.getElementById("currentyear").textContent = new Date().getFullYear();
 document.getElementById("lastModified").textContent = `Last Modified: ${document.lastModified}`;
 
@@ -11,10 +12,11 @@ navButton.addEventListener('click', () => {
 });
 
 
-
+//local storage for last visit message
 document.addEventListener("DOMContentLoaded", () => {
   const visitMessage = document.getElementById("visit-message");
-  const lastVisit = localStorage.getItem("lastVisit");
+  const lastVisit = Number(localStorage.getItem("lastVisit"));
+
   const now = Date.now();
 
   if (!lastVisit) {
@@ -26,7 +28,8 @@ document.addEventListener("DOMContentLoaded", () => {
         ? "Back so soon! Awesome!"
         : `You last visited ${days} ${days === 1 ? "day" : "days"} ago.`;
   }
-  localStorage.setItem("lastVisit", now);
+
+  localStorage.setItem("lastVisit", now); // ✅ se guarda al final
 
   // JSON data loading
   fetch("data/discover.json")
@@ -36,7 +39,7 @@ document.addEventListener("DOMContentLoaded", () => {
       places.forEach((place, index) => {
         const card = document.createElement("section");
         card.classList.add("card");
-       
+
 
         card.innerHTML = `
           <h2>${place.name}</h2>
