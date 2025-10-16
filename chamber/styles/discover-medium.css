@@ -64,18 +64,17 @@
         display: block;
     }
 
-    
-        .card img {
-            transition: transform 0.3s ease, opacity 0.3s ease;
-        }
-    
-        .card img:hover {
-            transform: scale(1.05);
-            /* Zoom sutil */
-            opacity: 0.5;
-            /* Cambio de opacidad */
-        }
-        
+
+    .card img {
+        transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .card img:hover {
+        transform: scale(1.05);
+        opacity: 0.9;
+
+    }
+
 
 
 }
