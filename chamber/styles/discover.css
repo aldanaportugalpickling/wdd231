@@ -159,20 +159,12 @@ header span {
 }
 
 
-
-
 .card img {
     width: 100%;
-    height: 220px;
+    height: 100%;
     border-radius: 12px;
     display:block;
-    overflow: hidden;
 }
-
-
-/*added*/
-
-
 
 
 
