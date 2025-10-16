@@ -210,7 +210,7 @@ dialog::backdrop {
 }
 
 /* Botón de cerrar */
-dialog button.close-dialog {
+.close-dialog {
     background-color: #e0b000;
     color: #202020;
     border: none;
@@ -223,7 +223,7 @@ dialog button.close-dialog {
     margin-top: 1rem;
 }
 
-dialog button.close-dialog:hover {
+.close-dialog:hover {
     background-color: #ccc;
 }
 
