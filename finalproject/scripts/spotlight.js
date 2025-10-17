@@ -4,7 +4,7 @@ let countries = [];
 
 export async function fetchCountries() {
   try {
-    const response = await fetch('scripts/countries.json');
+    const response = await fetch('data/countries.json');
     if (!response.ok) throw new Error('Error al cargar los datos');
     countries = await response.json();
     updateSpotlight(); // show the first 4 countries

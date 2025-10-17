@@ -4,15 +4,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Explore | Around the Worl destinations</title>
+    <title>Explore | Around the World Destinations</title>
     <meta name="description"
         content="Explore each destination in detail with images, live weather, maps, and cultural insights. Discover what makes each country unique.">
     <meta name="author" content="Aldana Andrea Portugal Pickling">
     <meta property="og:title" content="Explore | Top Travel Destinations Worldwide">
     <meta property="og:description"
-        content="View deeper insights into the world's top 10 most visited countries. Access live weather, maps, and cultural highlights to plan your next adventure.">
+        content="View deeper insights into the world's top 15 most visited countries. Access live weather, maps, and cultural highlights to plan your next adventure.">
     <meta property="og:image" content="images/favicon.svg">
     <meta property="og:url" content="https://aldanaportugal.github.io/wdd231/finalproject/explore.html">
+
+    <meta name="robots" content="index, follow">
+
 
 
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
@@ -20,6 +23,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
 
     <link rel="icon" href="images/favicon.svg">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/explore.css">
+    <link rel="stylesheet" href="styles/explore-large.css">
+
 
     <script src="scripts/weather.js" defer></script>
 
@@ -47,6 +55,9 @@
             <h1>Explore</h1>
         </div>
 
+        <h2>Explore the Top Destinations</h2>
+
+
         <section id="countries" class="grid"></section>
 
         <dialog id="weatherDialog">
@@ -58,7 +69,7 @@
 
                 <div class="location-block">
                     <p><strong>Location</strong></p>
-                    <a id="mapsLink" href="#" target="_blank">View on Google Maps</a>
+                    <a id="mapsLink" href="#" target="_blank" rel="noopener noreferrer">View on Google Maps</a>
                 </div>
 
                 <button id="closeDialog">Close</button>
@@ -71,11 +82,11 @@
     <footer>
 
         <div class="social">
-            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg" alt="facebook" width="16"
                     height="16"></a>
-            <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
                     height="16"></a>
-            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16"
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="images/twitter-x.svg" alt="Twitter" width="16"
                     height="16"></a>
         </div>
 

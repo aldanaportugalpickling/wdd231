@@ -117,8 +117,8 @@ async function loadCountries() {
           townEl.textContent = data.name;
           descEl.textContent = data.weather[0].description;
           tempEl.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
-          graphicEl.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-          graphicEl.alt = data.weather[0].description;
+            graphicEl.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+          graphicEl.alt = data.weather[0].description || "weather icon";
 
           // Set google maps link
           mapsLink.href = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
