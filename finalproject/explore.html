@@ -27,6 +27,7 @@
     <script src="scripts/weather.js" defer></script>
 
 </head>
+
 <body>
     <header>
         <img src="images/favicon.svg" alt="site logo" width="30" height="30">
@@ -43,80 +44,185 @@
     </nav>
 
     <main>
-        
+
         <div class="title-area">
             <h1>Explore</h1>
         </div>
 
 
-        <section>
-            <div>
+        <section id="countries">
+            <div data-country="india">
                 <img src="images/india.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam
+                    voluptatum saepe earum.</p>
             </div>
 
             <div>
                 <img src="images/italia.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-italy"></h2>
+                        <img id="graphic-italy" src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <p id="description-italy"></p>
+                        <p id="temperature-italy"></p>
+                    </div>
+
+                </dialog>
             </div>
 
             <div>
                 <img src="images/dubai.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-dubai"></h2>
+                        <img id="graphic-dubai" src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <p id="description-dubai"></p>
+                        <p id="temperature-dubai"></p>
+                    </div>
+                </dialog>
             </div>
 
             <div>
                 <img src="images/egipto.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-egypt"></h2>
+                        <img id="graphic-egypt" src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <p id="description-egypt"></p>
+                        <p id="temperature-egypt"></p>
+                    </div>
+                </dialog>
+
             </div>
 
             <div>
                 <img src="images/francia.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-france"></h2>
+                        <img id="graphic-france" src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <p id="description-france"></p>
+                        <p id="temperature-france"></p>
+                    </div>
+                </dialog>
             </div>
 
             <div>
                 <img src="images/rusia.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-russia"></h2>
+                        <img id="graphic-russia" src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <p id="description-russia"></p>
+                        <p id="temperature-russia"></p>
+                    </div>
+                </dialog>
             </div>
 
             <div>
                 <img src="images/australia.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-australia"></h2>
+                        <img id="graphic-australia" src=" https://openweathermap.org/img/wn/10d@2x.png"
+                            alt="weather-icon">
+                        <p id="description-australia"></p>
+                        <p id="temperature-australia"></p>
+                    </div>
+
+                </dialog>
             </div>
 
             <div>
                 <img src="images/usa.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-usa"></h2>
+                        <img id="graphic-usa" src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <p id="description-usa"></p>
+                        <p id="temperature-usa"></p>
+                    </div>
+                </dialog>
             </div>
 
             <div>
                 <img src="images/noruega.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-norway"></h2>
+                        <img id="graphic-norway" src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <p id="description-norway"></p>
+                        <p id="temperature-norway"></p>
+                    </div>
+                </dialog>
             </div>
 
             <div>
                 <img src="images/japon.webp" alt="" width="300" height="200" loading="lazy">
                 <button class="learn-btn" data-modal="modal-np">Learn More</button>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint
-                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil
+                    molestiae sint
+                    dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe
+                    earum.</p>
+
+                <dialog>
+                    <div class="weather-card">
+                        <h2 id="town-japan"></h2>
+                        <img id="graphic-japan" src=" https://openweathermap.org/img/wn/10d@2x.png" alt="weather-icon">
+                        <p id="description-japan"></p>
+                        <p id="temperature-japan"></p>
+                    </div>
+                </dialog>
             </div>
 
         </section>
