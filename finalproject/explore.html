@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore | Around the Worl destinations</title>
+    <meta name="description"
+        content="Explore each destination in detail with images, live weather, maps, and cultural insights. Discover what makes each country unique.">
+    <meta name="author" content="Aldana Andrea Portugal Pickling">
+    <meta property="og:title" content="Explore | Top Travel Destinations Worldwide">
+    <meta property="og:description"
+        content="View deeper insights into the world's top 10 most visited countries. Access live weather, maps, and cultural highlights to plan your next adventure.">
+    <meta property="og:image" content="images/favicon.svg">
+    <meta property="og:url" content="https://aldanaportugal.github.io/wdd231/finalproject/explore.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.svg">
+
+    <script src="scripts/weather.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <img src="images/favicon.svg" alt="site logo" width="30" height="30">
+        <span>Around the World</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li class="current"><a href="explore.html">Explore</a></li>
+            <li><a href="contact.html">Suscribe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        
+        <div class="title-area">
+            <h1>Explore</h1>
+        </div>
+
+
+        <section>
+            <div>
+                <img>
+                <button class="learn-btn" data-modal="modal-np">Learn More</button>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Expedita, exercitationem unde, rem nihil molestiae sint dolorum in, similique officia mollitia dolores sunt! Eius ipsam quo est laboriosam voluptatum saepe earum.</p>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
+                    height="16"></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
+                    height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16"
+                    height="16"></a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> Aldana Andrea Portugal Pickling | Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>

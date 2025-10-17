@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe | Around the World Updates & Inspiration</title>
+    <meta name="description"
+        content="Join our travel community and get updates, inspiration, and exclusive insights from the world's top destinations. Subscribe to stay connected and explore more.">
+    <meta name="author" content="Aldana Andrea Portugal Pickling">
+    <meta property="og:title" content="Subscribe | Travel Updates from Around the World">
+    <meta property="og:description"
+        content="Sign up to receive travel inspiration, updates, and cultural highlights from the 10 most visited countries. Stay curious and connected.">
+    <meta property="og:image" content="images/favicon.svg">
+    <meta property="og:url" content="https://aldanaportugal.github.io/wdd231/finalproject/contact.html">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/index-large.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+    <link rel="icon" href="images/favicon.svg">
+
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.svg" alt="site logo" width="30" height="30">
+        <span>Around the World</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li class="current"><a href="contact.html">Suscribe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+
+        <div class="title-area">
+            <h1>Suscribe</h1>
+        </div>
+
+        <section class="form-section">
+            <h2>SUSCRIBE TO STAY INSPIRED</h2>
+            <form method="get" action="thankyou.html">
+                <label for="firstName">First Name</label>
+                <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name"
+                    required>
+                <label for="lastName">Last Name
+                    <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
+                        required>
+                </label>
+
+                <label for="email">Email
+                    <input type="email" id="email" name="email" title="Enter your email" autocomplete="email"
+                        placeholder="you@example.com" required>
+                </label>
+
+                <button type="submit">Suscribe</button>
+            </form>
+
+            <div><p>Suscribe to receive curated updates on the world's most visited destinations</p></div>
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <div class="social">
+            <a href="https://www.facebook.com/" target="_blank"><img src="images/facebook.svg" alt="facebook" width="16"
+                    height="16"></a>
+            <a href="https://www.whatsapp.com/" target="_blank"><img src="images/whatsapp.svg" alt="WhatsApp" width="16"
+                    height="16"></a>
+            <a href="https://x.com/" target="_blank"><img src="images/twitter-x.svg" alt="Twitter" width="16"
+                    height="16"></a>
+        </div>
+
+        <p>&copy; <span id="currentyear"></span> Aldana Andrea Portugal Pickling | Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+
+</html>
