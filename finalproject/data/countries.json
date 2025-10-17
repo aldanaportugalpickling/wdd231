@@ -51,10 +51,10 @@
   },
   {
     "id": "russia",
-    "name": "Saint Basil’s Cathedral, Russia",
+    "name": "Saint Basil's Cathedral, Russia",
     "city": "Moscow",
     "img": "images/russia.webp",
-    "desc": "The colorful cathedral in Moscow’s Red Square, a masterpiece of Russian architecture.",
+    "desc": "The colorful cathedral in Moscow's Red Square, a masterpiece of Russian architecture.",
     "language": "Russian",
     "lat": 55.7525,
     "lon": 37.6231

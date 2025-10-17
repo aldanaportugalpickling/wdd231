@@ -68,7 +68,7 @@ const graphicEl = document.querySelector('#graphic');
 const closeBtn = document.querySelector('#closeDialog');
 const mapsLink = document.getElementById('mapsLink');
 
-// Función para obtener clima usando el nombre de la ciudad
+// function to obtein weather using the name of city
 async function fetchWeather(city) {
   const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${myKey}&units=metric`;
   const response = await fetch(url);
@@ -76,13 +76,13 @@ async function fetchWeather(city) {
   return await response.json();
 }
 
-// Cerrar diálogo
+//close dialog 
 closeBtn.addEventListener('click', () => dialog.close());
 
-// Cargar países desde JSON y generar tarjetas dinámicamente
+//load countries JSON and create cards
 async function loadCountries() {
   try {
-    const response = await fetch('data/countries.json'); // <-- ruta correcta
+    const response = await fetch('data/countries.json'); // <-- correct path
     if (!response.ok) throw new Error('Error al cargar JSON');
     const countries = await response.json();
 
@@ -103,7 +103,7 @@ async function loadCountries() {
       countriesContainer.appendChild(card);
     });
 
-    // Asignar evento a los botones Learn More
+      //Assign event to learn more buttons
     document.querySelectorAll('.learn-btn').forEach(btn => {
       btn.addEventListener('click', async () => {
         const parent = btn.parentElement;
@@ -120,7 +120,7 @@ async function loadCountries() {
           graphicEl.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
           graphicEl.alt = data.weather[0].description;
 
-          // Enlace a Google Maps
+          // Set google maps link
           mapsLink.href = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
           mapsLink.textContent = `View ${parent.querySelector('h3').textContent} on Google Maps`;
 
@@ -138,5 +138,5 @@ async function loadCountries() {
   }
 }
 
-// Inicializar
+// Initialize
 loadCountries();

@@ -7,8 +7,8 @@ export async function fetchCountries() {
     const response = await fetch('scripts/countries.json');
     if (!response.ok) throw new Error('Error al cargar los datos');
     countries = await response.json();
-    updateSpotlight(); // mostrar los primeros 4
-    setInterval(updateSpotlight, 8000); // cambiar cada 8 segundos
+    updateSpotlight(); // show the first 4 countries
+    setInterval(updateSpotlight, 8000); // change every 8 seconds
   } catch (error) {
     console.error(error);
     container.innerHTML = `<p>Failed to load spotlight countries.</p>`;
@@ -16,7 +16,7 @@ export async function fetchCountries() {
 }
 
 function updateSpotlight() {
-  container.innerHTML = ''; // limpiar el contenido actual
+  container.innerHTML = ''; // clean the current content
 
   // Barajar y elegir 4 aleatorios distintos
   const shuffled = countries.sort(() => Math.random() - 0.5);
