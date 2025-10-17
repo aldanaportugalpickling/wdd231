@@ -58,59 +58,85 @@ function displayResults(data) {
     myGraphic.setAttribute('ALT', data.weather[0].description);
 }*/
 
-
 const myKey = '66c6ef90f50ed28ef42520446f90f69e';
-
-const countries = {
-  india: { lat: 12.2958, lon: 76.6395 },
-  italy: { lat: 41.8919, lon: 12.5113 },
-  dubai: { lat: 25.0773, lon: 55.3093 },
-  egypt: { lat: 30.0444, lon: 31.2357 },
-  france: { lat: 48.8534, lon: 2.3488 },
-  russia: { lat: 55.7558, lon: 37.6173 },
-  australia: { lat: -33.8688, lon: 151.2093 },
-  usa: { lat: 40.7143, lon: -74.0060 },
-  norway: { lat: 59.9139, lon: 10.7522 },
-  japan: { lat: 35.6895, lon: 139.6917 }
-};
-
+const countriesContainer = document.getElementById('countries');
 const dialog = document.querySelector('#weatherDialog');
 const townEl = document.querySelector('#town');
 const descEl = document.querySelector('#description');
 const tempEl = document.querySelector('#temperature');
 const graphicEl = document.querySelector('#graphic');
 const closeBtn = document.querySelector('#closeDialog');
+const mapsLink = document.getElementById('mapsLink');
 
-function fetchWeather(lat, lon) {
-  const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${myKey}&units=metric`;
-  return fetch(url).then(res => res.json());
+// Función para obtener clima usando el nombre de la ciudad
+async function fetchWeather(city) {
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${myKey}&units=metric`;
+  const response = await fetch(url);
+  if (!response.ok) throw new Error(`Error fetching weather for ${city}`);
+  return await response.json();
 }
-
-document.querySelectorAll('.learn-btn').forEach(btn => {
-  btn.addEventListener('click', async () => {
-    const countryId = btn.parentElement.dataset.country;
-    const { lat, lon } = countries[countryId];
-    const data = await fetchWeather(lat, lon);
-
-    townEl.textContent = data.name;
-    descEl.textContent = data.weather[0].description;
-    tempEl.innerHTML = `${data.main.temp}&deg;C`;
-    graphicEl.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-    graphicEl.alt = data.weather[0].description;
-      
-    
-      //open location in google maps
-      
-    const mapsLink = document.getElementById('mapsLink');
-    mapsLink.href = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
-    mapsLink.textContent = `View ${data.name} on Google Maps`;
-      
-
-    dialog.showModal();
-  });
-});
 
 // Cerrar diálogo
 closeBtn.addEventListener('click', () => dialog.close());
 
+// Cargar países desde JSON y generar tarjetas dinámicamente
+async function loadCountries() {
+  try {
+    const response = await fetch('data/countries.json'); // <-- ruta correcta
+    if (!response.ok) throw new Error('Error al cargar JSON');
+    const countries = await response.json();
 
+    countries.forEach(country => {
+      const card = document.createElement('div');
+      card.className = 'country-card';
+      card.dataset.country = country.id;
+      card.dataset.city = country.city;
+      card.dataset.lat = country.lat;
+      card.dataset.lon = country.lon;
+
+      card.innerHTML = `
+        <img src="${country.img}" alt="${country.name}" loading="lazy">
+        <h3>${country.name}</h3>
+        <p>${country.desc}</p>
+        <button class="learn-btn">Learn More</button>
+      `;
+      countriesContainer.appendChild(card);
+    });
+
+    // Asignar evento a los botones Learn More
+    document.querySelectorAll('.learn-btn').forEach(btn => {
+      btn.addEventListener('click', async () => {
+        const parent = btn.parentElement;
+        const city = parent.dataset.city;
+        const lat = parent.dataset.lat;
+        const lon = parent.dataset.lon;
+
+        try {
+          const data = await fetchWeather(city);
+
+          townEl.textContent = data.name;
+          descEl.textContent = data.weather[0].description;
+          tempEl.innerHTML = `${data.main.temp.toFixed(1)}&deg;C`;
+          graphicEl.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+          graphicEl.alt = data.weather[0].description;
+
+          // Enlace a Google Maps
+          mapsLink.href = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
+          mapsLink.textContent = `View ${parent.querySelector('h3').textContent} on Google Maps`;
+
+          dialog.showModal();
+        } catch (error) {
+          console.error('Error loading weather:', error);
+          alert('Weather data could not be loaded. Please try again.');
+        }
+      });
+    });
+
+  } catch (error) {
+    console.error('Error loading countries:', error);
+    countriesContainer.innerHTML = `<p>Failed to load countries.</p>`;
+  }
+}
+
+// Inicializar
+loadCountries();

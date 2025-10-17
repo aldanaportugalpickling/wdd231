@@ -1,137 +1,152 @@
 [
   {
     "id": "india",
-    "name": "India",
+    "name": "Taj Mahal, India",
+    "city": "Agra",
     "img": "images/india.webp",
-    "desc": "Rich and diverse culture.",
+    "desc": "The magnificent white marble mausoleum in Agra, symbol of eternal love.",
     "language": "Hindi",
-    "lat": 12.2958,
-    "lon": 76.6395
+    "lat": 27.1751,
+    "lon": 78.0421
   },
   {
     "id": "italy",
-    "name": "Italy",
+    "name": "Colosseum, Italy",
+    "city": "Rome",
     "img": "images/italia.webp",
-    "desc": "Birthplace of art and gastronomy.",
+    "desc": "Ancient Roman amphitheater in the heart of Rome, a wonder of history and architecture.",
     "language": "Italian",
-    "lat": 41.8919,
-    "lon": 12.5113
+    "lat": 41.8902,
+    "lon": 12.4922
   },
   {
     "id": "dubai",
-    "name": "Dubai",
+    "name": "Burj Khalifa, Dubai",
+    "city": "Dubai",
     "img": "images/dubai.webp",
-    "desc": "Modern city in the desert.",
+    "desc": "The tallest building in the world, located in the ultra-modern city of Dubai.",
     "language": "Arabic",
-    "lat": 25.0773,
-    "lon": 55.3093
+    "lat": 25.1972,
+    "lon": 55.2744
   },
   {
     "id": "egypt",
-    "name": "Egypt",
-    "img": "images/egipto.webp",
-    "desc": "Land of pharaohs and pyramids.",
+    "name": "Pyramids of Giza, Egypt",
+    "city": "Giza",
+    "img": "images/egypt.webp",
+    "desc": "The iconic pyramids built for the pharaohs, one of the Seven Wonders of the Ancient World.",
     "language": "Arabic",
-    "lat": 30.0444,
-    "lon": 31.2357
+    "lat": 29.9792,
+    "lon": 31.1342
   },
   {
     "id": "france",
-    "name": "France",
-    "img": "images/francia.webp",
-    "desc": "Romantic and artistic.",
+    "name": "Eiffel Tower, France",
+    "city": "Paris",
+    "img": "images/france.webp",
+    "desc": "The world-famous iron tower in Paris, symbol of romance and art.",
     "language": "French",
-    "lat": 48.8534,
-    "lon": 2.3488
+    "lat": 48.8584,
+    "lon": 2.2945
   },
   {
     "id": "russia",
-    "name": "Russia",
-    "img": "images/rusia.webp",
-    "desc": "Impressive history and architecture.",
+    "name": "Saint Basil’s Cathedral, Russia",
+    "city": "Moscow",
+    "img": "images/russia.webp",
+    "desc": "The colorful cathedral in Moscow’s Red Square, a masterpiece of Russian architecture.",
     "language": "Russian",
-    "lat": 55.7558,
-    "lon": 37.6173
+    "lat": 55.7525,
+    "lon": 37.6231
   },
   {
     "id": "australia",
-    "name": "Australia",
+    "name": "Sydney Opera House, Australia",
+    "city": "Sydney",
     "img": "images/australia.webp",
-    "desc": "Unique beaches and nature.",
+    "desc": "Iconic performing arts center with a unique sail-like design, located in Sydney Harbour.",
     "language": "English",
-    "lat": -33.8688,
-    "lon": 151.2093
+    "lat": -33.8568,
+    "lon": 151.2153
   },
   {
     "id": "usa",
-    "name": "USA",
+    "name": "Statue of Liberty, USA",
+    "city": "New York",
     "img": "images/usa.webp",
-    "desc": "Cultural diversity and landscapes.",
+    "desc": "The symbol of freedom standing proudly in New York Harbor.",
     "language": "English",
-    "lat": 40.7143,
-    "lon": -74.0060
+    "lat": 40.6892,
+    "lon": -74.0445
   },
   {
     "id": "norway",
-    "name": "Norway",
-    "img": "images/noruega.webp",
-    "desc": "Fiords and stunning nature.",
+    "name": "Lofoten Islands, Norway",
+    "city": "Svolvær",
+    "img": "images/norway.webp",
+    "desc": "Scenic arctic islands famous for northern lights, fjords, and dramatic mountain views.",
     "language": "Norwegian",
-    "lat": 59.9139,
-    "lon": 10.7522
+    "lat": 68.2180,
+    "lon": 13.7341
   },
   {
     "id": "japan",
-    "name": "Japan",
-    "img": "images/japon.webp",
-    "desc": "Tradition and technology combined.",
+    "name": "Tokyo Tower, Japan",
+    "city": "Tokyo",
+    "img": "images/japan.webp",
+    "desc": "A red and white communications tower offering panoramic views of Tokyo city.",
     "language": "Japanese",
-    "lat": 35.6895,
-    "lon": 139.6917
+    "lat": 35.6586,
+    "lon": 139.7454
   },
   {
-    "id": "spain",
-    "name": "Spain",
-    "img": "images/spain.webp",
-    "desc": "Rich history and sunny beaches.",
+    "id": "peru",
+    "name": "Machu Picchu, Peru",
+    "city": "Cusco",
+    "img": "images/peru.webp",
+    "desc": "The lost Incan citadel set high in the Andes Mountains, a UNESCO World Heritage site.",
     "language": "Spanish",
-    "lat": 40.4168,
-    "lon": -3.7038
+    "lat": -13.1631,
+    "lon": -72.5450
   },
   {
     "id": "brazil",
-    "name": "Brazil",
+    "name": "Christ the Redeemer, Brazil",
+    "city": "Rio de Janeiro",
     "img": "images/brazil.webp",
-    "desc": "Carnivals, Amazon rainforest, and culture.",
+    "desc": "The colossal statue of Jesus overlooking Rio de Janeiro, symbol of faith and peace.",
     "language": "Portuguese",
-    "lat": -15.7939,
-    "lon": -47.8828
+    "lat": -22.9519,
+    "lon": -43.2105
   },
   {
     "id": "china",
-    "name": "China",
+    "name": "Great Wall of China, China",
+    "city": "Beijing",
     "img": "images/china.webp",
-    "desc": "Ancient civilization and modern cities.",
+    "desc": "The longest wall in the world, stretching across northern China’s mountains and deserts.",
     "language": "Mandarin",
-    "lat": 39.9042,
-    "lon": 116.4074
+    "lat": 40.4319,
+    "lon": 116.5704
   },
   {
     "id": "thailand",
-    "name": "Thailand",
+    "name": "Wat Arun Temple, Thailand",
+    "city": "Bangkok",
     "img": "images/thailand.webp",
-    "desc": "Beautiful beaches and rich traditions.",
+    "desc": "The Temple of Dawn on the Chao Phraya River, famous for its colorful spires and sunsets.",
     "language": "Thai",
-    "lat": 13.7563,
-    "lon": 100.5018
+    "lat": 13.7437,
+    "lon": 100.4889
   },
   {
     "id": "greece",
-    "name": "Greece",
+    "name": "Temple of Aphaia, Greece",
+    "city": "Aegina",
     "img": "images/greece.webp",
-    "desc": "Mediterranean islands and ancient ruins.",
+    "desc": "An ancient Doric temple on the island of Aegina, surrounded by the Aegean Sea.",
     "language": "Greek",
-    "lat": 37.9838,
-    "lon": 23.7275
+    "lat": 37.7461,
+    "lon": 23.5253
   }
 ]

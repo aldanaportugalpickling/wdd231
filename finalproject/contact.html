@@ -48,25 +48,26 @@
         </div>
 
         <section class="form-section">
-            <h2>SUSCRIBE TO STAY INSPIRED</h2>
-            <form method="get" action="thankyou.html">
+            <h2>Stay Inspired — Join Our Global Community</h2>
+        
+            <form id="subscribe-form">
                 <label for="firstName">First Name</label>
-                <input type="text" id="firstName" name="firstName" title="Enter your first name" autocomplete="given-name"
-                    required>
-                <label for="lastName">Last Name
-                    <input type="text" id="lastName" name="lastName" title="Enter your last name" autocomplete="family-name"
-                        required>
-                </label>
-
-                <label for="email">Email
-                    <input type="email" id="email" name="email" title="Enter your email" autocomplete="email"
-                        placeholder="you@example.com" required>
-                </label>
-
-                <button type="submit">Suscribe</button>
+                <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
+        
+                <label for="lastName">Last Name</label>
+                <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
+        
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
+        
+                <button type="submit">Subscribe</button>
             </form>
-
-            <div><p>Suscribe to receive curated updates on the world's most visited destinations</p></div>
+        
+            <p id="confirmation" class="confirmation"></p>
+        
+            <div class="note">
+                <p>Subscribe to receive curated updates on the world's most visited destinations.</p>
+            </div>
         </section>
 
     </main>
