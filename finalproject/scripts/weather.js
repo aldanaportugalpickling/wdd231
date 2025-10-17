@@ -74,29 +74,43 @@ const countries = {
   japan: { lat: 35.6895, lon: 139.6917 }
 };
 
-// Función para obtener clima por país
-function fetchWeather(lat, lon, id) {
+const dialog = document.querySelector('#weatherDialog');
+const townEl = document.querySelector('#town');
+const descEl = document.querySelector('#description');
+const tempEl = document.querySelector('#temperature');
+const graphicEl = document.querySelector('#graphic');
+const closeBtn = document.querySelector('#closeDialog');
+
+function fetchWeather(lat, lon) {
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${myKey}&units=metric`;
-
-  fetch(url)
-    .then(response => response.json())
-    .then(data => displayWeather(data, id))
-    .catch(error => console.log(error));
+  return fetch(url).then(res => res.json());
 }
 
-// Mostrar datos en la tarjeta correspondiente
-function displayWeather(data, id) {
-  document.querySelector(`#town-${id}`).textContent = data.name;
-  document.querySelector(`#description-${id}`).textContent = data.weather[0].description;
-  document.querySelector(`#temperature-${id}`).innerHTML = `${data.main.temp}&deg;C`;
-  const iconSrc = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
-  document.querySelector(`#graphic-${id}`).setAttribute('src', iconSrc);
-  document.querySelector(`#graphic-${id}`).setAttribute('alt', data.weather[0].description);
-}
+document.querySelectorAll('.learn-btn').forEach(btn => {
+  btn.addEventListener('click', async () => {
+    const countryId = btn.parentElement.dataset.country;
+    const { lat, lon } = countries[countryId];
+    const data = await fetchWeather(lat, lon);
 
-// Ejecutar para todos los países
-for (const id in countries) {
-  const { lat, lon } = countries[id];
-  fetchWeather(lat, lon, id);
-}
+    townEl.textContent = data.name;
+    descEl.textContent = data.weather[0].description;
+    tempEl.innerHTML = `${data.main.temp}&deg;C`;
+    graphicEl.src = `https://openweathermap.org/img/wn/${data.weather[0].icon}@2x.png`;
+    graphicEl.alt = data.weather[0].description;
+      
+    
+      //open location in google maps
+      
+    const mapsLink = document.getElementById('mapsLink');
+    mapsLink.href = `https://www.google.com/maps/search/?api=1&query=${lat},${lon}`;
+    mapsLink.textContent = `View ${data.name} on Google Maps`;
+      
+
+    dialog.showModal();
+  });
+});
+
+// Cerrar diálogo
+closeBtn.addEventListener('click', () => dialog.close());
+
 

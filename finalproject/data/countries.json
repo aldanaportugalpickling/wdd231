@@ -1,0 +1,137 @@
+[
+  {
+    "id": "india",
+    "name": "India",
+    "img": "images/india.webp",
+    "desc": "Rich and diverse culture.",
+    "language": "Hindi",
+    "lat": 12.2958,
+    "lon": 76.6395
+  },
+  {
+    "id": "italy",
+    "name": "Italy",
+    "img": "images/italia.webp",
+    "desc": "Birthplace of art and gastronomy.",
+    "language": "Italian",
+    "lat": 41.8919,
+    "lon": 12.5113
+  },
+  {
+    "id": "dubai",
+    "name": "Dubai",
+    "img": "images/dubai.webp",
+    "desc": "Modern city in the desert.",
+    "language": "Arabic",
+    "lat": 25.0773,
+    "lon": 55.3093
+  },
+  {
+    "id": "egypt",
+    "name": "Egypt",
+    "img": "images/egipto.webp",
+    "desc": "Land of pharaohs and pyramids.",
+    "language": "Arabic",
+    "lat": 30.0444,
+    "lon": 31.2357
+  },
+  {
+    "id": "france",
+    "name": "France",
+    "img": "images/francia.webp",
+    "desc": "Romantic and artistic.",
+    "language": "French",
+    "lat": 48.8534,
+    "lon": 2.3488
+  },
+  {
+    "id": "russia",
+    "name": "Russia",
+    "img": "images/rusia.webp",
+    "desc": "Impressive history and architecture.",
+    "language": "Russian",
+    "lat": 55.7558,
+    "lon": 37.6173
+  },
+  {
+    "id": "australia",
+    "name": "Australia",
+    "img": "images/australia.webp",
+    "desc": "Unique beaches and nature.",
+    "language": "English",
+    "lat": -33.8688,
+    "lon": 151.2093
+  },
+  {
+    "id": "usa",
+    "name": "USA",
+    "img": "images/usa.webp",
+    "desc": "Cultural diversity and landscapes.",
+    "language": "English",
+    "lat": 40.7143,
+    "lon": -74.0060
+  },
+  {
+    "id": "norway",
+    "name": "Norway",
+    "img": "images/noruega.webp",
+    "desc": "Fiords and stunning nature.",
+    "language": "Norwegian",
+    "lat": 59.9139,
+    "lon": 10.7522
+  },
+  {
+    "id": "japan",
+    "name": "Japan",
+    "img": "images/japon.webp",
+    "desc": "Tradition and technology combined.",
+    "language": "Japanese",
+    "lat": 35.6895,
+    "lon": 139.6917
+  },
+  {
+    "id": "spain",
+    "name": "Spain",
+    "img": "images/spain.webp",
+    "desc": "Rich history and sunny beaches.",
+    "language": "Spanish",
+    "lat": 40.4168,
+    "lon": -3.7038
+  },
+  {
+    "id": "brazil",
+    "name": "Brazil",
+    "img": "images/brazil.webp",
+    "desc": "Carnivals, Amazon rainforest, and culture.",
+    "language": "Portuguese",
+    "lat": -15.7939,
+    "lon": -47.8828
+  },
+  {
+    "id": "china",
+    "name": "China",
+    "img": "images/china.webp",
+    "desc": "Ancient civilization and modern cities.",
+    "language": "Mandarin",
+    "lat": 39.9042,
+    "lon": 116.4074
+  },
+  {
+    "id": "thailand",
+    "name": "Thailand",
+    "img": "images/thailand.webp",
+    "desc": "Beautiful beaches and rich traditions.",
+    "language": "Thai",
+    "lat": 13.7563,
+    "lon": 100.5018
+  },
+  {
+    "id": "greece",
+    "name": "Greece",
+    "img": "images/greece.webp",
+    "desc": "Mediterranean islands and ancient ruins.",
+    "language": "Greek",
+    "lat": 37.9838,
+    "lon": 23.7275
+  }
+]
