@@ -109,7 +109,7 @@ header span {
     font-style: italic;
     text-align: center;
     margin: 10px 5px;
-   
+
 }
 
 .hero img {
@@ -132,7 +132,7 @@ header span {
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
     font-size: 0.9rem;
-    
+
 }
 
 .cta-button:hover {
@@ -149,22 +149,19 @@ header span {
 
 /*SPOTLIGHT*/
 
-/* Spotlight container */
+
 .spotlight .grid {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
-    align-items: stretch;
-        /* ← importante para igualar alturas */
-}
-
-.spotlight {
     justify-items: center;
-
+    align-items: stretch;
 }
+
 
 /* Spotlight card layout */
 .spotlight-card {
+
     background-color: #fff;
     border-radius: 8px;
     border: 2px solid #a6a6a6;
@@ -172,10 +169,6 @@ header span {
     font-family: 'Lora', serif;
     width: 300px;
     max-width: 90%;
-
-
-    /*min-height: 400px;*/
-            /* ajusta según lo que necesites */
 
 
 }
@@ -201,8 +194,8 @@ header span {
     padding: 1rem;
     font-size: 0.95rem;
     color: #333;
-   
-    
+
+
 }
 
 /* Map link */
@@ -229,6 +222,7 @@ header span {
     margin-bottom: 0.6rem;
     line-height: 1.4;
 }
+
 .text {
     text-align: center;
     font-style: italic;
