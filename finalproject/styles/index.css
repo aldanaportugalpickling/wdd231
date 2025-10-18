@@ -5,6 +5,10 @@
 
 }
 
+main {
+    min-height: calc(100vh - 150px);
+    /* ajusta según el alto del header + footer */
+}
 body {
     background-color: #eee;
     color: #333
@@ -270,4 +274,8 @@ footer {
     color: #1d0b5d;
     font-size: 15px;
     min-height: 20px;
+}
+
+.visually-hidden {
+    display: none;
 }
