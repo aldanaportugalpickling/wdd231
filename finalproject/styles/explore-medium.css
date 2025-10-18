@@ -1,0 +1,43 @@
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+
+         #countries.grid {
+             grid-template-columns: repeat(2, 1fr);
+         }
+    
+         /* overlay aún debajo de la imagen */
+        .country-card .overlay {
+            margin-top: 0.5rem;
+        }
+
+
+}

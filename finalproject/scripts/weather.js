@@ -96,12 +96,13 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.dataset.lon = country.lon;
 
                 card.innerHTML = `
-          <img src="${country.img}" alt="${country.name}" loading="lazy">
-          <h3>${country.name}</h3>
-          <p>${country.desc}</p>
-          <button class="learn-btn">Learn More</button>
-        `;
-                countriesContainer.appendChild(card);
+                <h3>${country.name}</h3>
+                 <img src="${country.img}" alt="${country.name}" loading="lazy">
+          
+             <p>${country.desc}</p>
+            <button class="learn-btn">Learn More</button>
+            `;
+            countriesContainer.appendChild(card);
             });
 
             //Assign event to learn more buttons
