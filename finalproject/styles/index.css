@@ -1,5 +1,7 @@
 * {
     box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 
 }
 
@@ -83,6 +85,126 @@ header span {
 }
 
 /***MAIN CONTENT***/
+
+.hero {
+    display: block;
+    justify-items: center;
+    position: relative;
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    
+}
+
+
+.hero h2 {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+    color: #333;
+    margin-top: 1rem;
+}
+
+.hero p {
+    font-family: 'poppins', sans-serif;
+    font-size: 14px;
+    color: rgb(101, 101, 101);
+    font-style: italic;
+    margin: 1rem 5rem;
+    text-align: center;
+   
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.cta-button {
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    background-color: #e0b000;
+    color: #333;
+    padding: 0.75rem 1.25rem;
+    border-radius: 5px;
+    font-weight: bold;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+.cta-button:hover {
+    background-color: #ccc;
+}
+
+.title-area {
+    margin-left: 10px;
+    font-size: 15px;
+}
+
+.title-area h1 {
+    color: #333;
+    text-align: center;
+
+}
+
+#spotlight-container {
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.visually-hidden {
+    display: none;
+}
+
+
+/* Cada carta */
+.spotlight-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    /* Ajusta el tamaño de la carta */
+    max-width: 400px;
+    /* Tamaño máximo */
+    background-color: #f9f9f9;
+    /* opcional: color de fondo */
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Imagen de la carta: todas mismas dimensiones */
+.spotlight-card img {
+    width: 100%;
+    height: 250px;
+    /* altura fija para todas */
+    object-fit: cover;
+    /* recorta sin deformar */
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+/* Información de la carta */
+.spotlight-card .hover-info h3 {
+    margin: 0.5rem 0;
+    font-size: 1.2rem;
+}
+
+.spotlight-card .hover-info p {
+    margin: 0.3rem 0;
+    font-size: 0.95rem;
+}
+
+
+.text {
+    text-align: center;
+    padding: 1rem;
+    font-style: italic;
+}
 
 
 
