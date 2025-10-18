@@ -1,8 +1,8 @@
-// ===== Get current year and last modified =====
+// get current year and last modified
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-// ===== Hamburger button =====
+// hamburger button
 const navButton = document.querySelector('#nav-button');
 const navBar = document.querySelector('#nav-bar');
 
@@ -11,7 +11,7 @@ navButton.addEventListener('click', () => {
     navBar.classList.toggle('show');
 });
 
-// ===== Form submission =====
+// form submission
 const form = document.getElementById('subscribe-form');
 const confirmation = document.getElementById('confirmation');
 
@@ -28,7 +28,6 @@ form.addEventListener('submit', (e) => {
         return;
     }
 
-    // Crear objeto de suscripción con fecha y hora
     const newSub = {
         firstName,
         lastName,
@@ -36,7 +35,7 @@ form.addEventListener('submit', (e) => {
         date: new Date().toLocaleString()
     };
 
-    // Guardar en localStorage
+    // store en localStorage
     const storedSubs = JSON.parse(localStorage.getItem('subscriptions')) || [];
     storedSubs.push(newSub);
     localStorage.setItem('subscriptions', JSON.stringify(storedSubs));
