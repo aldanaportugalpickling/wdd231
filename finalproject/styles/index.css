@@ -226,13 +226,6 @@ header span {
     line-height: 1.4;
 }
 
-.text {
-    text-align: center;
-    font-style: italic;
-    padding: 1rem;
-    color: #333;
-
-}
 
 .visually-hidden {
     display: none;
