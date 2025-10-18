@@ -158,6 +158,11 @@ header span {
         /* ← importante para igualar alturas */
 }
 
+.spotlight {
+    justify-items: center;
+
+}
+
 /* Spotlight card layout */
 .spotlight-card {
     background-color: #fff;
@@ -166,25 +171,15 @@ header span {
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Lora', serif;
     width: 300px;
-        /* ancho fijo más consistente */
-        /*max-width: 90%;
-        /* responsivo en pantallas pequeñas */
+    max-width: 90%;
 
-        min-height: 400px;
+
+    /*min-height: 400px;*/
             /* ajusta según lo que necesites */
 
 
-            display: flex;
-                flex-direction: column;
-                justify-content: center;
-                /* centra verticalmente */
-                align-items: center;
-                /* centra horizontalmente si quieres */
-                text-align: center;
-                /* para los textos */
-                min-height: 400px;
-        
 }
+
 
 /* Hover animation */
 .spotlight-card:hover {
