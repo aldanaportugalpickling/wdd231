@@ -158,8 +158,6 @@ header span {
     align-items: stretch;
 }
 
-
-/* Spotlight card layout */
 .spotlight-card {
 
     background-color: #fff;
@@ -169,10 +167,7 @@ header span {
     font-family: 'Lora', serif;
     width: 300px;
     max-width: 90%;
-
-
 }
-
 
 /* Hover animation */
 .spotlight-card:hover {
@@ -200,7 +195,7 @@ header span {
 
 /* Map link */
 .hover-info a {
-    color: #e0b000;
+    color: #1d0b5d;
     text-decoration: none;
     font-weight: bold;
 }
