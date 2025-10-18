@@ -1,40 +1,19 @@
-// Año y last modified
-document.querySelector('#currentyear').textContent = new Date().getFullYear();
-document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
+const funFactsContainer = document.getElementById('fun-facts');
 
-// Menu hamburguesa
-const navButton = document.querySelector('#nav-button');
-const navBar = document.querySelector('#nav-bar');
-
-navButton.addEventListener('click', () => {
-  navButton.classList.toggle('show');
-  navBar.classList.toggle('show');
-});
-
-// Cargar Fun Facts desde JSON
-document.addEventListener('DOMContentLoaded', () => {
-  const funContainer = document.getElementById('fun-facts');
-
-  async function loadFunFacts() {
-    try {
-      const response = await fetch('data/countries.json');
-      if (!response.ok) throw new Error('Error loading countries');
-      const countries = await response.json();
-
-      countries.forEach(country => {
-        const card = document.createElement('div');
-        card.className = 'fun-card';
-        card.innerHTML = `
-          <h3>${country.name} ${country.emoji || ''}</h3>
-          <p>${country.funFact}</p>
-        `;
-        funContainer.appendChild(card);
-      });
-    } catch (error) {
-      funContainer.innerHTML = '<p>Failed to load fun facts.</p>';
-      console.error(error);
-    }
-  }
-
-  loadFunFacts();
-});
+fetch('data/countries.json')
+  .then(response => response.json())
+  .then(countries => {
+    countries.forEach(country => {
+      const card = document.createElement('div');
+      card.classList.add('fun-card');
+      card.innerHTML = `
+        <div class="image" style="background-image: url(${country.img});"></div>
+        <div class="overlay">
+          <h3>${country.name}</h3>
+          <p>${country.funFact || 'A fascinating place full of stories to tell.'}</p>
+        </div>
+      `;
+      funFactsContainer.appendChild(card);
+    });
+  })
+  .catch(error => console.error('Error loading fun facts:', error));
