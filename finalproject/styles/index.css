@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #F5F5F5;
+    background-color: #ddd;
     color: #333
 }
 
@@ -72,7 +72,7 @@ header span {
     padding: .8rem 10px;
     color: #eee;
     text-decoration: none;
-    border-top: solid 1px #ccc
+    border-top: solid 1px #eee
 }
 
 .navigation li.current {
@@ -90,7 +90,7 @@ header span {
     justify-items: center;
     position: relative;
     width: 100%;
-    max-height: auto;
+    height: auto;
 }
 
 
@@ -105,7 +105,7 @@ header span {
 .hero p {
     font-family: 'poppins', sans-serif;
     font-size: 14px;
-    color: rgb(101, 101, 101);
+    color: #333;
     font-style: italic;
     text-align: center;
     margin: 10px 5px;
@@ -161,7 +161,7 @@ header span {
 .spotlight-card {
     background-color: #fff;
     border-radius: 8px;
-    border: 2px solid #ccc;
+    border: 2px solid #a6a6a6;
     box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
     font-family: 'Lora', serif;
     width: 300px;
@@ -223,6 +223,7 @@ header span {
     text-align: center;
     font-style: italic;
     padding: 1rem;
+    color: #333;
 
 }
 
