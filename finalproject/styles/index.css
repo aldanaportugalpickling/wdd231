@@ -101,7 +101,8 @@ header span {
     font-family: 'Lora', serif;
     font-weight: bold;
     color: #333;
-    margin-top: 1rem;
+    text-align: center;
+    margin-top: 10px;
 }
 
 .hero p {
@@ -109,8 +110,8 @@ header span {
     font-size: 14px;
     color: rgb(101, 101, 101);
     font-style: italic;
-    margin: 1rem 5rem;
     text-align: center;
+    margin: 10px 5px;
    
 }
 
@@ -119,27 +120,29 @@ header span {
     height: auto;
 }
 
+/* Botón CTA responsive para móviles */
 .cta-button {
     position: absolute;
     bottom: 1rem;
-    right: 1rem;
+    /* espacio desde la parte inferior de la imagen */
+    right: 50%;
+    /* mueve el botón al centro horizontal */
+    transform: translateX(50%);
+    /* centra exactamente */
     background-color: #e0b000;
     color: #333;
-    padding: 0.75rem 1.25rem;
+    padding: 0.6rem 1rem;
+    /* tamaño más compacto para móviles */
     border-radius: 5px;
     font-weight: bold;
     text-decoration: none;
     font-family: 'Poppins', sans-serif;
-
+    font-size: 0.9rem;
+    /* un poco más pequeño para móvil */
 }
 
 .cta-button:hover {
     background-color: #ccc;
-}
-
-.title-area {
-    margin-left: 10px;
-    font-size: 15px;
 }
 
 .title-area h1 {
@@ -148,66 +151,87 @@ header span {
 
 }
 
-#spotlight-container {
-    display: grid;
-    grid-template-columns: 1fr;
-    row-gap: 1rem;
-    margin-bottom: 2rem;
+/*SPOTLIGHT*/
+
+/* Spotlight container */
+.spotlight .grid {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+/* Spotlight card layout */
+.spotlight-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    font-family: 'Lora', serif;
+}
+
+/* Hover animation */
+.spotlight-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Title */
+.spotlight-card h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 0.8rem 1rem 0 1rem;
+    color: #1d0b5d;
     text-align: center;
 }
 
-.visually-hidden {
-    display: none;
+/* Info section */
+.hover-info {
+    padding: 0.5rem 1rem 1rem 1rem;
+    font-size: 0.95rem;
+    color: #333;
+    
 }
 
-
-/* Cada carta */
-.spotlight-card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 90%;
-    /* Ajusta el tamaño de la carta */
-    max-width: 400px;
-    /* Tamaño máximo */
-    background-color: #f9f9f9;
-    /* opcional: color de fondo */
-    padding: 1rem;
-    border-radius: 10px;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+/* Map link */
+.hover-info a {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #e0b000;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-/* Imagen de la carta: todas mismas dimensiones */
+.hover-info a:hover {
+    text-decoration: underline;
+}
+
+/* Image */
 .spotlight-card img {
     width: 100%;
-    height: 250px;
-    /* altura fija para todas */
-    object-fit: cover;
-    /* recorta sin deformar */
-    border-radius: 8px;
-    margin-bottom: 1rem;
-}
-
-/* Información de la carta */
-.spotlight-card .hover-info h3 {
-    margin: 0.5rem 0;
-    font-size: 1.2rem;
+    height: auto;
+    display: block;
+    margin-top: 0.5rem;
+    border-top: 1px solid #eee;
 }
 
 .spotlight-card .hover-info p {
-    margin: 0.3rem 0;
-    font-size: 0.95rem;
+    margin-bottom: 0.6rem;
+    line-height: 1.4;
 }
 
 
 .text {
     text-align: center;
-    padding: 1rem;
     font-style: italic;
+    padding: 1rem;
+
 }
 
 
-
+.visually-hidden {
+    display: none;
+}
 
 
 

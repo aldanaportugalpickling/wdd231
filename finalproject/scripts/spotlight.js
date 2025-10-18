@@ -42,9 +42,9 @@ function updateSpotlight() {
         const card = document.createElement('div');
         card.className = 'spotlight-card';
         card.innerHTML = `
+        <h3>${country.name}</h3>
       <img src="${country.img}" alt="${country.name}" loading="lazy">
       <div class="hover-info">
-        <h3>${country.name}</h3>
         <p>${country.desc}</p>
         <p><strong>Language:</strong> ${country.language}</p>
         <a href="https://www.google.com/maps/search/?api=1&query=${country.lat},${country.lon}" target="_blank">📍 View on Map</a>
