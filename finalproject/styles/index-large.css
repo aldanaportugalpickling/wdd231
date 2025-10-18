@@ -29,56 +29,21 @@
         border: none;
     }
 
-         .hero {
-             display: grid;
-             grid-template-columns: 1fr 1fr;
-             align-items: center;
-             gap: 1rem;
-             position: relative;
-             padding: 2rem 0;
-         }
-    
-         .hero h2,
-         .hero p,
-         .cta-button {
-             text-align: left;
-             margin-left: 1rem;
-         }
-    
-         .hero h2 {
-             font-size: 2rem;
-         }
-    
-         .hero p {
-             font-size: 1rem;
-             margin-bottom: 1rem;
-         }
-    
-         .cta-button {
-             position: static;
-             transform: none;
-             margin-left: 1rem;
-             margin-top: 1rem;
-         }
-    
-         .hero img {
-             width: 100%;
-             height: auto;
-             aspect-ratio: 7/3;
-             border-radius: 8px;
-         }
-    
-         /* SPOTLIGHT horizontal layout */
-         .spotlight .grid {
-             flex-direction: row;
-             flex-wrap: wrap;
-             justify-content: center;
-             gap: 2rem;
-         }
-    
-         .spotlight-card {
-             width: 250px;
-             max-width: none;
-         }
+    .spotlight .grid {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+
+    .spotlight-card img {
+        transition: opacity 0.3s ease;
+        
+    }
+
+    .spotlight-card img:hover {
+        opacity: 0.7;
+        
+    }
 
 }
