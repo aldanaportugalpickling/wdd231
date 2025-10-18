@@ -1,11 +1,10 @@
 * {
     box-sizing: border-box;
-
 }
 
 body {
     background-color: #eee;
-    color: #333
+    color: #333;
 }
 
 header {
@@ -46,9 +45,7 @@ header span {
     content: "\00D7";
 }
 
-
 /***NAVIGATION***/
-
 .navigation {
     display: none;
 }
@@ -63,7 +60,6 @@ header span {
     padding: 0;
     background-color: #1d0b5d;
     text-align: center;
-
 }
 
 .navigation a {
@@ -71,7 +67,7 @@ header span {
     padding: .8rem 10px;
     color: #eee;
     text-decoration: none;
-    border-top: solid 1px #ccc
+    border-top: solid 1px #ccc;
 }
 
 .navigation li.current {
@@ -82,8 +78,6 @@ header span {
     background-color: #333;
 }
 
-
-
 /*main*/
 .box-explore {
     text-align: center;
@@ -92,25 +86,22 @@ header span {
     border-bottom: #333 2px solid;
     border-top: #333 2px solid;
     opacity: 0;
-        animation: appear 0.8s ease forwards;
-    }
-    
-    /* Animación para que aparezca */
-    @keyframes appear {
-        from {
-            opacity: 0;
-            transform: translateY(10px);
-            /* opcional: sube un poco */
-        }
-    
-        to {
-            opacity: 1;
-            transform: translateY(0);
-        }
+    animation: appear 0.8s ease forwards;
+}
+
+/* Animación para que aparezca */
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
     }
 
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-/* --- MOBILE-FIRST --- */
 /* --- MOBILE-FIRST --- */
 #countries.grid {
     display: grid;
@@ -124,15 +115,16 @@ header span {
     background-color: #fff;
     position: relative;
     width: 100%;
-    max-width: 220px;
+    max-width: 290px;
+    /* antes 260px, ahora un poco más grande */
     overflow: hidden;
     border-radius: 8px;
     box-shadow: 0 5px 6px rgba(0, 0, 0, 0.5);
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .country-card:hover {
     transform: scale(1.02);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
@@ -150,6 +142,8 @@ header span {
 
 .country-card p {
     padding: 0.7rem;
+    flex: 1;
+    /* permite que el contenido crezca y empuje el botón hacia abajo */
 }
 
 /* Imagen */
@@ -173,8 +167,7 @@ header span {
 /* Botón Learn More */
 .country-card .learn-btn {
     margin-top: auto;
-        /* Empuja el botón hacia el final */
-    margin-top: 0.8rem;
+    /* empuja el botón siempre al mismo nivel */
     padding: 0.3rem 0.6rem;
     background-color: #e0b000;
     color: #333;
@@ -190,9 +183,6 @@ header span {
 .country-card .learn-btn:hover {
     background-color: #ccc;
 }
-
-
-
 
 /* --- DIALOG DECORADO --- */
 #weatherDialog {
@@ -238,8 +228,6 @@ header span {
     background-color: #ccc;
 }
 
-
-
 /*footer*/
 footer {
     padding: 1rem 10px;
@@ -276,4 +264,8 @@ footer {
     color: #1d0b5d;
     font-size: 15px;
     min-height: 20px;
+}
+
+.visually-hiden {
+    display: none;
 }
