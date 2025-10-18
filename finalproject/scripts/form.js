@@ -1,18 +1,17 @@
-//get the current year and last modified 
+// ===== Get current year and last modified =====
 document.querySelector('#currentyear').textContent = new Date().getFullYear();
 document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-// Hamburguer button 
+// ===== Hamburger button =====
 const navButton = document.querySelector('#nav-button');
 const navBar = document.querySelector('#nav-bar');
 
 navButton.addEventListener('click', () => {
     navButton.classList.toggle('show');
     navBar.classList.toggle('show');
-
 });
 
-
+// ===== Form submission =====
 const form = document.getElementById('subscribe-form');
 const confirmation = document.getElementById('confirmation');
 
@@ -29,6 +28,7 @@ form.addEventListener('submit', (e) => {
         return;
     }
 
+    // Crear objeto de suscripción con fecha y hora
     const newSub = {
         firstName,
         lastName,
@@ -36,12 +36,18 @@ form.addEventListener('submit', (e) => {
         date: new Date().toLocaleString()
     };
 
+    // Guardar en localStorage
     const storedSubs = JSON.parse(localStorage.getItem('subscriptions')) || [];
     storedSubs.push(newSub);
     localStorage.setItem('subscriptions', JSON.stringify(storedSubs));
 
+    // Mostrar mensaje de confirmación en la página
     confirmation.textContent = `✅ Thank you, ${firstName}! You've been successfully subscribed.`;
     confirmation.style.color = "green";
 
+    // Limpiar el formulario
     form.reset();
+
+    // Abrir ventana emergente tipo alerta
+    window.alert(`🎉 Congratulations, ${firstName}! You've successfully subscribed. In the coming days, we will send you notifications and updates.`);
 });

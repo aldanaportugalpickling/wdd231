@@ -168,23 +168,8 @@ header span {
     text-align: center;
 }
 
-/* ===== RESPONSIVE ===== */
-@media (max-width: 480px) {
-    .form-section {
-        padding: 1.5rem;
-        margin: 1rem;
-    }
 
-    .form-section h2 {
-        font-size: 1.5rem;
-    }
 
-    #subscribe-form input,
-    #subscribe-form button {
-        font-size: 1rem;
-        padding: 0.7rem 0.9rem;
-    }
-}
 /*footer*/
 footer {
     padding: 1rem 10px;
@@ -223,3 +208,22 @@ footer {
     min-height: 20px;
 }
 
+
+
+/* ===== RESPONSIVE ===== */
+@media (max-width: 480px) {
+    .form-section {
+        padding: 1.5rem;
+        margin: 1rem;
+    }
+
+    .form-section h2 {
+        font-size: 1.5rem;
+    }
+
+    #subscribe-form input,
+    #subscribe-form button {
+        font-size: 1rem;
+        padding: 0.7rem 0.9rem;
+    }
+}
