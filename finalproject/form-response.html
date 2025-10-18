@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Response | Around the World</title>
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="icon" href="images/favicon.svg">
+</head>
+
+<body>
+    <main class="form-section">
+        <h1>🎉 Thank You for Subscribing!</h1>
+        <div id="response"></div>
+    </main>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const firstName = params.get("firstName");
+        const lastName = params.get("lastName");
+        const email = params.get("email");
+
+        document.getElementById("response").innerHTML = `
+      <p><strong>Name:</strong> ${firstName} ${lastName}</p>
+      <p><strong>Email:</strong> ${email}</p>
+      <p><strong>Date:</strong> ${new Date().toLocaleString()}</p>
+      <p>We'll be sending you updates soon 🌎</p>
+    `;
+    </script>
+</body>
+
+</html>

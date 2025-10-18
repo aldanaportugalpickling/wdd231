@@ -57,26 +57,29 @@
 
         <section class="form-section">
             <h2>Join Our Global Community</h2>
-
-            <form id="subscribe-form">
-                <label for="firstName"><strong>Fisrt Name</strong></label>
+        
+            <!-- 🔹 Cambiamos el form -->
+            <form id="subscribe-form" action="form-response.html" method="get">
+                <label for="firstName"><strong>First Name</strong></label>
                 <input type="text" id="firstName" name="firstName" autocomplete="given-name" required>
-
+        
                 <label for="lastName"><strong>Last Name</strong></label>
                 <input type="text" id="lastName" name="lastName" autocomplete="family-name" required>
-
+        
                 <label for="email"><strong>Email</strong></label>
                 <input type="email" id="email" name="email" autocomplete="email" placeholder="you@example.com" required>
-
+        
                 <button type="submit">Subscribe</button>
             </form>
-
+        
             <p id="confirmation" class="confirmation"></p>
-
+        
             <div class="note">
                 <p>Subscribe to receive curated updates on the world's most visited destinations.</p>
             </div>
         </section>
+        </main>
+
 
     </main>
 

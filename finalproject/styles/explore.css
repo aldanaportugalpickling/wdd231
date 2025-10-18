@@ -282,3 +282,54 @@ footer {
     clip: rect(0, 0, 0, 0);
     border: 0;
 }
+
+@media only screen and (min-width: 38rem) {
+
+    header,
+    main,
+    nav,
+    footer {
+        max-width: 900px;
+        margin: auto;
+    }
+
+    header {
+        grid-template-columns: 24px auto;
+        border-bottom: solid 1px #ddd;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+    }
+
+    .navigation a {
+        border: none;
+    }
+
+    /* --- GRID DE PAÍSES EN TABLET --- */
+    #countries.grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 1.5rem;
+        justify-items: center;
+        max-width: 900px;
+        margin: 0 auto;
+    }
+
+    /* Ajuste del ancho de las tarjetas para que encajen bien en dos columnas */
+    .country-card {
+        max-width: 260px;
+    }
+
+    /* Overlay debajo de la imagen */
+    .country-card .overlay {
+        margin-top: 0.5rem;
+    }
+}

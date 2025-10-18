@@ -1,19 +1,6 @@
-// get current year and last modified
-document.querySelector('#currentyear').textContent = new Date().getFullYear();
-document.querySelector('#lastModified').textContent = `Last Modified: ${document.lastModified}`;
 
-// hamburger button
-const navButton = document.querySelector('#nav-button');
-const navBar = document.querySelector('#nav-bar');
-
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navBar.classList.toggle('show');
-});
-
-// form submission
+// ====== Form handling ======
 const form = document.getElementById('subscribe-form');
-const confirmation = document.getElementById('confirmation');
 
 form.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -23,30 +10,24 @@ form.addEventListener('submit', (e) => {
     const email = document.getElementById('email').value.trim();
 
     if (!firstName || !lastName || !email) {
-        confirmation.textContent = "⚠️ Please fill out all fields.";
-        confirmation.style.color = "crimson";
+        alert("⚠️ Please fill out all fields before subscribing.");
         return;
     }
 
+    // Guarda en localStorage
     const newSub = {
         firstName,
         lastName,
         email,
         date: new Date().toLocaleString()
     };
-
-    // store en localStorage
     const storedSubs = JSON.parse(localStorage.getItem('subscriptions')) || [];
     storedSubs.push(newSub);
     localStorage.setItem('subscriptions', JSON.stringify(storedSubs));
 
-    // Mostrar mensaje de confirmación en la página
-    confirmation.textContent = `✅ Thank you, ${firstName}! You've been successfully subscribed.`;
-    confirmation.style.color = "green";
+    // Ventana emergente
+    window.alert(`🎉 Congratulations, ${firstName}! You've successfully subscribed. In the coming days, we will send you updates.`);
 
-    // Limpiar el formulario
-    form.reset();
-
-    // Abrir ventana emergente tipo alerta
-    window.alert(`🎉 Congratulations, ${firstName}! You've successfully subscribed. In the coming days, we will send you notifications and updates.`);
+    // Redirigir a form-response.html con datos en la URL
+    window.location.href = `form-response.html?firstName=${encodeURIComponent(firstName)}&lastName=${encodeURIComponent(lastName)}&email=${encodeURIComponent(email)}`;
 });
