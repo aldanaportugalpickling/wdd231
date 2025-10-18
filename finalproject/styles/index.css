@@ -10,6 +10,7 @@ body {
     color: #333
 }
 
+
 header {
     display: grid;
     grid-template-columns: 30px auto 44px;
@@ -227,9 +228,6 @@ header span {
 }
 
 
-.visually-hidden {
-    display: none;
-}
 
 
 
@@ -238,7 +236,10 @@ footer {
     padding: 1rem 10px;
     text-align: center;
     background-color: #ddd;
+
+
 }
+
 
 .social {
     display: flex;

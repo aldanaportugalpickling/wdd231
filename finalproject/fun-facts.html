@@ -4,10 +4,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fun Facts | Around the World</title>
+    <title>Fun Facts about Countries</title>
+    <meta name="description"
+        content="Explore each destination in detail with images, live weather, maps, and cultural insights. Discover what makes each country unique.">
+    <meta name="author" content="Aldana Andrea Portugal Pickling">
+    <meta property="og:title" content="Explore | Top Travel Destinations Worldwide">
+    <meta property="og:description"
+        content="View deeper insights into the world's top 15 most visited countries. Access live weather, maps, and cultural highlights to plan your next adventure.">
+    <meta property="og:image" content="images/favicon.svg">
+    <meta property="og:url" content="https://aldanaportugal.github.io/wdd231/finalproject/explore.html">
+
+    <meta name="robots" content="index, follow">
+
+
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
     <link rel="icon" href="images/favicon.svg">
+
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/fun-facts.css">
+
+    <script src="scripts/fun-facts.js" defer></script>
+    <script src="scripts/main.js" defer></script>
+
 </head>
 
 <body>
@@ -21,8 +43,8 @@
         <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="explore.html">Explore</a></li>
-            <li class="current"><a href="fun-facts.html">Fun Facts</a></li>
             <li><a href="form.html">Suscribe</a></li>
+            <li class="current"><a href="fun-facts.html">Fun Facts</a></li>
         </ul>
     </nav>
 
@@ -37,16 +59,20 @@
     </main>
 
     <footer>
+    
         <div class="social">
-            <a href="#"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
-            <a href="#"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
-            <a href="#"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+            <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer"><img src="images/facebook.svg"
+                    alt="facebook" width="16" height="16"></a>
+            <a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer"><img src="images/whatsapp.svg"
+                    alt="WhatsApp" width="16" height="16"></a>
+            <a href="https://x.com/" target="_blank" rel="noopener noreferrer"><img src="images/twitter-x.svg" alt="Twitter"
+                    width="16" height="16"></a>
         </div>
+    
         <p>&copy; <span id="currentyear"></span> Aldana Andrea Portugal Pickling | Peru</p>
         <p id="lastModified"></p>
     </footer>
 
-    <script src="scripts/fun-facts.js" defer></script>
 </body>
 
 </html>
