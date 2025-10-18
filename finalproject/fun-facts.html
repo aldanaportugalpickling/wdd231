@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fun Facts | Around the World</title>
+    <link rel="icon" href="images/favicon.svg">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/fun-facts.css">
+</head>
+
+<body>
+    <header>
+        <img src="images/favicon.svg" alt="site logo" width="30" height="30">
+        <span>Around the World</span>
+        <button id="nav-button" class="hamburger" aria-label="navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="explore.html">Explore</a></li>
+            <li class="current"><a href="fun-facts.html">Fun Facts</a></li>
+            <li><a href="form.html">Suscribe</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <div class="title-area">
+            <h1>Fun Facts About Countries</h1>
+        </div>
+
+        <section id="fun-facts" class="grid">
+            <!-- Tarjetas se generan con JS -->
+        </section>
+    </main>
+
+    <footer>
+        <div class="social">
+            <a href="#"><img src="images/facebook.svg" alt="Facebook" width="16" height="16"></a>
+            <a href="#"><img src="images/whatsapp.svg" alt="WhatsApp" width="16" height="16"></a>
+            <a href="#"><img src="images/twitter-x.svg" alt="Twitter" width="16" height="16"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> Aldana Andrea Portugal Pickling | Peru</p>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="scripts/fun-facts.js" defer></script>
+</body>
+
+</html>

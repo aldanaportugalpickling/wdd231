@@ -7,7 +7,9 @@
     "desc": "The magnificent white marble mausoleum in Agra, symbol of eternal love.",
     "language": "Hindi",
     "lat": 27.1751,
-    "lon": 78.0421
+    "lon": 78.0421,
+    "funFact": "The Taj Mahal changes its color throughout the day — pinkish in the morning, milky white at night! 🌅",
+    "emoji": "🇮🇳"
   },
   {
     "id": "italy",
@@ -17,7 +19,9 @@
     "desc": "Ancient Roman amphitheater in the heart of Rome, a wonder of history and architecture.",
     "language": "Italian",
     "lat": 41.8902,
-    "lon": 12.4922
+    "lon": 12.4922,
+    "funFact": "The Colosseum could hold over 50,000 spectators — and had elevators for wild animals! 🏛️",
+    "emoji": "🇮🇹"
   },
   {
     "id": "dubai",
@@ -27,7 +31,9 @@
     "desc": "The tallest building in the world, located in the ultra-modern city of Dubai.",
     "language": "Arabic",
     "lat": 25.1972,
-    "lon": 55.2744
+    "lon": 55.2744,
+    "funFact": "The Burj Khalifa is so tall that you can see the sunset twice in one day — from the base and from the top! 🌇",
+    "emoji": "🇦🇪"
   },
   {
     "id": "egypt",
@@ -37,7 +43,9 @@
     "desc": "The iconic pyramids built for the pharaohs, one of the Seven Wonders of the Ancient World.",
     "language": "Arabic",
     "lat": 29.9792,
-    "lon": 31.1342
+    "lon": 31.1342,
+    "funFact": "The Great Pyramid was the tallest man-made structure for 3,800 years! ⏳",
+    "emoji": "🇪🇬"
   },
   {
     "id": "france",
@@ -47,7 +55,9 @@
     "desc": "The world-famous iron tower in Paris, symbol of romance and art.",
     "language": "French",
     "lat": 48.8584,
-    "lon": 2.2945
+    "lon": 2.2945,
+    "funFact": "The Eiffel Tower can grow up to 15 cm taller in summer due to metal expansion! ☀️",
+    "emoji": "🇫🇷"
   },
   {
     "id": "russia",
@@ -57,7 +67,9 @@
     "desc": "The colorful cathedral in Moscow's Red Square, a masterpiece of Russian architecture.",
     "language": "Russian",
     "lat": 55.7525,
-    "lon": 37.6231
+    "lon": 37.6231,
+    "funFact": "The cathedral’s vibrant colors were added more than 200 years after it was built! 🎨",
+    "emoji": "🇷🇺"
   },
   {
     "id": "australia",
@@ -67,7 +79,9 @@
     "desc": "Iconic performing arts center with a unique sail-like design, located in Sydney Harbour.",
     "language": "English",
     "lat": -33.8568,
-    "lon": 151.2153
+    "lon": 151.2153,
+    "funFact": "The Opera House roof tiles are self-cleaning — designed to shine after the rain! 🌧️",
+    "emoji": "🇦🇺"
   },
   {
     "id": "usa",
@@ -77,7 +91,9 @@
     "desc": "The symbol of freedom standing proudly in New York Harbor.",
     "language": "English",
     "lat": 40.6892,
-    "lon": -74.0445
+    "lon": -74.0445,
+    "funFact": "The Statue of Liberty was originally a shiny copper color before turning green! 🗽",
+    "emoji": "🇺🇸"
   },
   {
     "id": "norway",
@@ -87,7 +103,9 @@
     "desc": "Scenic arctic islands famous for northern lights, fjords, and dramatic mountain views.",
     "language": "Norwegian",
     "lat": 68.2180,
-    "lon": 13.7341
+    "lon": 13.7341,
+    "funFact": "During summer, the sun never sets in the Lofoten Islands — it’s daylight 24 hours! 🌞",
+    "emoji": "🇳🇴"
   },
   {
     "id": "japan",
@@ -97,7 +115,9 @@
     "desc": "A red and white communications tower offering panoramic views of Tokyo city.",
     "language": "Japanese",
     "lat": 35.6586,
-    "lon": 139.7454
+    "lon": 139.7454,
+    "funFact": "Tokyo Tower is 13 meters taller than the Eiffel Tower — its inspiration! 🗼",
+    "emoji": "🇯🇵"
   },
   {
     "id": "peru",
@@ -107,7 +127,9 @@
     "desc": "The lost Incan citadel set high in the Andes Mountains, a UNESCO World Heritage site.",
     "language": "Spanish",
     "lat": -13.1631,
-    "lon": -72.5450
+    "lon": -72.5450,
+    "funFact": "Machu Picchu was rediscovered in 1911 — hidden from the world for centuries! 🦙",
+    "emoji": "🇵🇪"
   },
   {
     "id": "brazil",
@@ -117,7 +139,9 @@
     "desc": "The colossal statue of Jesus overlooking Rio de Janeiro, symbol of faith and peace.",
     "language": "Portuguese",
     "lat": -22.9519,
-    "lon": -43.2105
+    "lon": -43.2105,
+    "funFact": "Lightning strikes the statue several times each year — but it always stands strong! ⚡",
+    "emoji": "🇧🇷"
   },
   {
     "id": "china",
@@ -127,7 +151,9 @@
     "desc": "The longest wall in the world, stretching across northern China’s mountains and deserts.",
     "language": "Mandarin",
     "lat": 40.4319,
-    "lon": 116.5704
+    "lon": 116.5704,
+    "funFact": "The Great Wall isn’t a single wall — it’s over 20,000 km of connected sections! 🧱",
+    "emoji": "🇨🇳"
   },
   {
     "id": "thailand",
@@ -137,7 +163,9 @@
     "desc": "The Temple of Dawn on the Chao Phraya River, famous for its colorful spires and sunsets.",
     "language": "Thai",
     "lat": 13.7437,
-    "lon": 100.4889
+    "lon": 100.4889,
+    "funFact": "Wat Arun is decorated with millions of pieces of Chinese porcelain! 🏮",
+    "emoji": "🇹🇭"
   },
   {
     "id": "greece",
@@ -147,6 +175,8 @@
     "desc": "An ancient Doric temple on the island of Aegina, surrounded by the Aegean Sea.",
     "language": "Greek",
     "lat": 37.7461,
-    "lon": 23.5253
+    "lon": 23.5253,
+    "funFact": "The Temple of Aphaia forms a perfect triangle with the Parthenon and Poseidon’s Temple! 🔺",
+    "emoji": "🇬🇷"
   }
 ]
