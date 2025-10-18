@@ -78,6 +78,10 @@ header span {
     background-color: #333;
 }
 
+.title-area {
+    margin: 0px 10px;
+}
+
 /*main*/
 .box-explore {
     text-align: center;
@@ -87,6 +91,7 @@ header span {
     border-top: #333 2px solid;
     opacity: 0;
     animation: appear 0.8s ease forwards;
+    margin: 0px 10px;
 }
 
 /* Animación para que aparezca */
@@ -232,7 +237,7 @@ header span {
 footer {
     padding: 1rem 10px;
     text-align: center;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 .social {
@@ -257,7 +262,7 @@ footer {
 }
 
 .social a:hover {
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 #lastModified {
@@ -265,6 +270,7 @@ footer {
     font-size: 15px;
     min-height: 20px;
 }
+
 
 .visually-hidden {
     position: absolute;

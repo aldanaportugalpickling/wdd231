@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!response.ok) throw new Error('Error to load JSON');
             const countries = await response.json();
 
-            countries.forEach(country => {
+            countries.forEach((country, index) => {
                 const card = document.createElement('div');
                 card.className = 'country-card';
                 card.dataset.country = country.id;
@@ -95,14 +95,18 @@ document.addEventListener('DOMContentLoaded', () => {
                 card.dataset.lat = country.lat;
                 card.dataset.lon = country.lon;
 
+                const priorityAttr = index === 0
+                    ? 'fetchpriority="high"'
+                    : 'loading="lazy"';
+
                 card.innerHTML = `
-                <h3>${country.name}</h3>
-                 <img src="${country.img}" alt="${country.name}" loading="lazy">
-          
-             <p>${country.desc}</p>
-            <button class="learn-btn">Learn More</button>
-            `;
-            countriesContainer.appendChild(card);
+                    <h3>${country.name}</h3>
+                    <img src="${country.img}" alt="${country.name}" ${priorityAttr}>
+                    <p>${country.desc}</p>
+                    <button class="learn-btn">Learn More</button>
+                `;
+
+                countriesContainer.appendChild(card);
             });
 
             //Assign event to learn more buttons
