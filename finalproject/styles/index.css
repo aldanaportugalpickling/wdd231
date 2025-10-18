@@ -192,9 +192,9 @@ header span {
 /* Info section */
 .hover-info {
     padding: 1rem;
-    font-size: 0.95rem;
     color: #333;
 
+    flex: 1;     /*new*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
