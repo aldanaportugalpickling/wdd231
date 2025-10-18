@@ -159,6 +159,7 @@ header span {
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: center;
 }
 
 /* Spotlight card layout */
@@ -169,6 +170,10 @@ header span {
     overflow: hidden;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     font-family: 'Lora', serif;
+    width: 300px;
+        /* ancho fijo más consistente */
+        max-width: 90%;
+        /* responsivo en pantallas pequeñas */
    
 }
 
