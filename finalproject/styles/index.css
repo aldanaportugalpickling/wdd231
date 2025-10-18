@@ -6,7 +6,7 @@
 }
 
 body {
-    background-color: #ddd;
+    background-color: #eee;
     color: #333
 }
 
@@ -115,7 +115,7 @@ header span {
 .hero img {
     width: 100%;
     height: auto;
-    aspect-ratio: 10/5;
+    aspect-ratio: 7/3;
 }
 
 /* Botón CTA responsive para móviles */
@@ -237,7 +237,7 @@ header span {
 footer {
     padding: 1rem 10px;
     text-align: center;
-    background-color: #eee;
+    background-color: #ddd;
 }
 
 .social {
@@ -262,7 +262,7 @@ footer {
 }
 
 .social a:hover {
-    background-color: #ddd;
+    background-color: #eee;
 }
 
 #lastModified {
